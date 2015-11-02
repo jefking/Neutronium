@@ -9,7 +9,7 @@
     public class NutritionController : ApiController
     {
         #region Members
-        private static readonly string connectionString = ConfigurationManager.ConnectionStrings["datastore"].ConnectionString;
+        private static readonly string connectionString = ConfigurationManager.AppSettings["datastore"];
         private readonly ITableStorage storage = null;
         #endregion
 
