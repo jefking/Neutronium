@@ -2,9 +2,9 @@
 {
     using System.Collections.Generic;
     using System.Configuration;
+    using System.Threading.Tasks;
     using System.Web.Http;
     using King.Azure.Data;
-    using Models;
 
     public class NutritionController : ApiController
     {
@@ -13,17 +13,20 @@
         private readonly ITableStorage storage = null;
         #endregion
 
+        #region Constructors
         public NutritionController()
             : this(new TableStorage("foods", connectionString))
         { }
         public NutritionController(ITableStorage storage)
-        { }
-
+        {
+            this.storage = storage;
+        }
+        #endregion
 
         [HttpGet]
-        public IEnumerable<Food> Get()
+        public async Task<IEnumerable<IDictionary<string, object>>> Get()
         {
-            return null;
+            return await storage.QueryByPartition(null);
         }
     }
 }
