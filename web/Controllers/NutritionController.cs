@@ -9,14 +9,23 @@
     public class NutritionController : ApiController
     {
         #region Members
+        /// <summary>
+        /// Connection String
+        /// </summary>
         private static readonly string connectionString = ConfigurationManager.AppSettings["datastore"];
+
+        /// <summary>
+        /// Table Storage Account
+        /// </summary>
         private readonly ITableStorage storage = null;
         #endregion
 
         #region Constructors
         public NutritionController()
             : this(new TableStorage("foods", connectionString))
-        { }
+        {
+        }
+
         public NutritionController(ITableStorage storage)
         {
             this.storage = storage;
