@@ -17,7 +17,7 @@
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            var connectionString = ConfigurationManager.ConnectionStrings["datastore"].ConnectionString;
+            var connectionString = ConfigurationManager.AppSettings["datastore"];
             var store = new TableStorage("foods", connectionString);
             store.CreateIfNotExists().Wait();
         }
