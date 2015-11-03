@@ -54,48 +54,6 @@
         <div id="data">
 
         </div>
-        <script language="javascript">
-            var React = require('react');
-            var ReactDOM = require('react-dom');
-            var FixedDataTable = require('fixed-data-table');
-
-            var Table = FixedDataTable.Table;
-            var Column = FixedDataTable.Column;
-
-
-            $.get('http://someurl.com', function (data, status) {
-                rows = data;
-            }, 'html');
-
-            // Table data as a list of array.
-            var rows = [];
-
-            function rowGetter(rowIndex) {
-                return rows[rowIndex];
-            }
-
-            //    ReactDOM.render(
-            //      <Table
-            //        rowHeight={50}
-            //        rowGetter={rowGetter}
-            //        rowsCount={rows.length}
-            //        width={5000}
-            //        height={5000}
-            //        headerHeight={50}>
-            //        <Column
-            //    label="Col 1"
-            //    width={3000}
-            //    dataKey={0}
-            //  />
-            //  <Column
-            //    label="Col 2"
-            //    width={2000}
-            //    dataKey={1}
-            //  />
-            //</Table>,
-            //    document.getElementById('data')
-            //);
-        </script>
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Jef King</p>
@@ -104,7 +62,7 @@
 
     <script src="https://fb.me/react-0.14.0.min.js"></script>
     <script src="https://fb.me/react-dom-0.14.0.min.js"></script>
-
+    <script src="@Url.Content("~/Scripts/foodTable.jsx")"></script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
 </body>
