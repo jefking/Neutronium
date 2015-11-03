@@ -5,6 +5,8 @@
     using System.Threading.Tasks;
     using System.Web.Http;
     using King.Azure.Data;
+    using King.Mapper;
+    using Models;
 
     public class NutritionController : ApiController
     {
@@ -33,9 +35,16 @@
         #endregion
 
         [HttpGet]
-        public async Task<IEnumerable<IDictionary<string, object>>> Get()
+        public async Task<IEnumerable<Food>> Get()
         {
-            return await storage.QueryByPartition(" ");
+            var datas = await storage.QueryByPartition(" ");
+            var foods = new List<Food>();
+            foreach (var data in datas)
+            {
+                foods.Add(datas.Map<Food>());
+            }
+
+            return foods;
         }
     }
 }

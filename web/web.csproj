@@ -52,6 +52,10 @@
       <HintPath>..\packages\King.Azure.1.1.19\lib\net45\King.Azure.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="King.Mapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\King.Mapper.1.7.15\lib\net46\King.Mapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.Azure.KeyVault.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
       <Private>True</Private>
