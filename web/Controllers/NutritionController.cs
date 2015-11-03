@@ -2,12 +2,12 @@
 {
     using System.Collections.Generic;
     using System.Configuration;
+    using System.Linq;
     using System.Threading.Tasks;
     using System.Web.Http;
     using King.Azure.Data;
     using King.Mapper;
     using Models;
-    using System.Linq;
 
     public class NutritionController : ApiController
     {
