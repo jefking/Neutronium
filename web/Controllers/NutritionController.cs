@@ -7,6 +7,7 @@
     using King.Azure.Data;
     using King.Mapper;
     using Models;
+    using System.Linq;
 
     public class NutritionController : ApiController
     {
@@ -38,13 +39,7 @@
         public async Task<IEnumerable<Food>> Get()
         {
             var datas = await storage.QueryByPartition(" ");
-            var foods = new List<Food>();
-            foreach (var data in datas)
-            {
-                foods.Add(datas.Map<Food>());
-            }
-
-            return foods;
+            return datas.Select(d => d.Map<Food>());
         }
     }
 }
