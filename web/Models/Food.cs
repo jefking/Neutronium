@@ -46,7 +46,7 @@
                 return (this.Protien / (this.Fat + this.Carb + this.Protien)) * 100;
             }
         }
-        public double CarbPerHundred
+        public double CalPerHundred
         {
             get;
             set;
