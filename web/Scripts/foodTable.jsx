@@ -1,9 +1,30 @@
 ﻿var CommentBox = React.createClass({
     render: function() {
         return (
-          <div className="commentBox">
-            Hello, world! I am a CommentBox.
-          </div>
+          <table class="table table-hover">
+                <tr>
+                    <td>Name</td>
+                    <td>Fat</td>
+                    <td>Carbs</td>
+                    <td>Protien</td>
+                    <td>Fat %</td>
+                    <td>Carb %</td>
+                    <td>Protien %</td>
+                    <td>Cal/100gr</td>
+                    <td>Sparkline</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
       );
     }
 });
