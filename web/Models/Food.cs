@@ -51,5 +51,13 @@
             get;
             set;
         }
+        public uint Grams
+        {
+            get
+            {
+                return 100;
+            }
+
+        }
     }
 }
