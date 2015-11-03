@@ -35,7 +35,7 @@
         [HttpGet]
         public async Task<IEnumerable<IDictionary<string, object>>> Get()
         {
-            return await storage.QueryByPartition(null);
+            return await storage.QueryByPartition(" ");
         }
     }
 }

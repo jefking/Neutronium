@@ -1,86 +1,86 @@
-Name,Fat,Carbs,Protein,Cal/100gr
-Olive Oil,100,0,0,884
-Macadamia,76,14,8,740
-Clarified Butter,82.1,0,0,726
-Pili Nut,79,4.2,10.8,719.2
-Savi Seed Carmalized,32,42.9,21.4,714
-Pecan,72,14,9,690
-Pine Nuts,68,13,14,673
-Brazil,66,12,14,656
-Walnut,65,14,15,654
-Hazel Nuts,61,17,15,628
-WowButter,46.9,25,21.9,625
-Kraft Crunchy Peanut Butter,50,20,25,600
-Toasted Coconut,47,44,5,592
-Sunflower Seeds,51,20,21,584
-Hemp Seeds/Hearts,46.7,6.7,36.7,580
-Almond,49,22,21,576
-Sesame seeds,50,23,18,573
-Peanuts,49,16,26,567
-Pistachio,45,29,21,567
-Cashew,44,30,18,553
-Yogurt almonds,35,55,10,550
-Dark Chocolate,31,61,4.9,546
-White chocolate,32.4,59.4,5.9,538
-Flax,42,29,18,534
-Nature Valley Granola Thins,23.6,23.5,5.9,529
-Nutella,32.4,56.8,5.4,526
-Poppy seeds,42,28,18,525
-Milk Chocolate Peanut,42.5,37.5,15,525
-Banana Chips,34,58,2.3,519
-HobNob Chocolate,21.4,62,7.9,500
-Short Bread,24,64,6,500
-Soy Nuts,26,32,34,500
-Dried Milk,27,38,26,496
-Chia,31,42,17,486
-M&M,21.4,71.4,4.3,485.7
-Simple Pleasures Oat Choco,23.3,66.7,6.7,484
-Bacon Jerky,32.1,3.6,42.9,480
-Granola,20,64,10,471
-Parmesan,30,0,40,466.6
-Dipps Bars,16.1,71,6.5,452
-Dried Soybeans,21.5,32.6,39.5,451
-Pumpkin Seeds,19,54,19,446
-Ramen Noodles,16,63,10,436
-Corn nuts,14,72,9,436
-Roasted Edemame,13,34,47.8,434
-Tsampa,2.7,86.7,11,433.3
-Quaker Yogurt Granola Bar,12.9,71.4,5.7,429
-Yogurt raisins,17.5,70,2.5,425
-Cracker Jack,7.4,85.2,7.4,420
-Rice Crispy Squares,8.9,80.5,3.5,409
-Whey,3.4,10.2,81.6,408
-Milk chocolate raisins,22.5,62.5,5,400
-Refried Beans,4.5,69,21,390
-Rolled Oats,6.2,69,13.6,379
-Good Hemp Protein Drink,12.6,15.4,47,370
-Quinoa,6,64,14,368
-Chick peas,6,61,19,364
-Dried mango,0,90.9,0,363.6
-Split Red Lentils,1.5,60,28,360
-Barley,2.3,73,12,354
-Barley,2.3,73,12,354
-Fig Newton,6.5,71,3.2,354
-Cherry's,0,82.5,2.5,350
-Cantaloupe,0,87.5,2,350
-Papaya,0,87.5,0,350
-Mung beans,1.2,63,24,347
-Buckwheat Groats,2.7,75,12,346
-Muesli,4.7,77.6,1.4,340
-Romano,26.6,0,33.3,333.3
-Cheddar,26.6,0,20,333.3
-Pineapple,0,85.7,2.4,333.3
-Beef Jerky,25,10,35,333
-Dried Blueberry,2.5,80,2.5,325
-Goji berries,0,85.7,14.3,321.4
-Dried Cranberry,1.4,82,0.1,308
-Raisin,0.5,79,3.1,299
-Currants,0,74.3,4.2,283
-Dried Date,0.15,75,1.8,277
-Dried Apples,0,66.3,1.2,243
-Dries Appricot,0.5,63,3.4,241
-Dried Prune,0.4,64,2.2,240
-Peaches,0.6,61.3,3.8,238.8
-Marmite,0.1,19.2,28.4,231
-Lima beans,0.4,21,8,115
-Vegemite,0,10,12.2,100
+PartitionKey,RowKey,Fat,Carb,Protien,CalPerHundred
+ ,Olive Oil,100,0,0,884
+ ,Macadamia,76,14,8,740
+ ,Clarified Butter,82.1,0,0,726
+ ,Pili Nut,79,4.2,10.8,719.2
+ ,Savi Seed Carmalized,32,42.9,21.4,714
+ ,Pecan,72,14,9,690
+ ,Pine Nuts,68,13,14,673
+ ,Brazil,66,12,14,656
+ ,Walnut,65,14,15,654
+ ,Hazel Nuts,61,17,15,628
+ ,WowButter,46.9,25,21.9,625
+ ,Kraft Crunchy Peanut Butter,50,20,25,600
+ ,Toasted Coconut,47,44,5,592
+ ,Sunflower Seeds,51,20,21,584
+ ,Hemp Seeds/Hearts,46.7,6.7,36.7,580
+ ,Almond,49,22,21,576
+ ,Sesame seeds,50,23,18,573
+ ,Peanuts,49,16,26,567
+ ,Pistachio,45,29,21,567
+ ,Cashew,44,30,18,553
+ ,Yogurt almonds,35,55,10,550
+ ,Dark Chocolate,31,61,4.9,546
+ ,White chocolate,32.4,59.4,5.9,538
+ ,Flax,42,29,18,534
+ ,Nature Valley Granola Thins,23.6,23.5,5.9,529
+ ,Nutella,32.4,56.8,5.4,526
+ ,Poppy seeds,42,28,18,525
+ ,Milk Chocolate Peanut,42.5,37.5,15,525
+ ,Banana Chips,34,58,2.3,519
+ ,HobNob Chocolate,21.4,62,7.9,500
+ ,Short Bread,24,64,6,500
+ ,Soy Nuts,26,32,34,500
+ ,Dried Milk,27,38,26,496
+ ,Chia,31,42,17,486
+ ,M&M,21.4,71.4,4.3,485.7
+ ,Simple Pleasures Oat Choco,23.3,66.7,6.7,484
+ ,Bacon Jerky,32.1,3.6,42.9,480
+ ,Granola,20,64,10,471
+ ,Parmesan,30,0,40,466.6
+ ,Dipps Bars,16.1,71,6.5,452
+ ,Dried Soybeans,21.5,32.6,39.5,451
+ ,Pumpkin Seeds,19,54,19,446
+ ,Ramen Noodles,16,63,10,436
+ ,Corn nuts,14,72,9,436
+ ,Roasted Edemame,13,34,47.8,434
+ ,Tsampa,2.7,86.7,11,433.3
+ ,Quaker Yogurt Granola Bar,12.9,71.4,5.7,429
+ ,Yogurt raisins,17.5,70,2.5,425
+ ,Cracker Jack,7.4,85.2,7.4,420
+ ,Rice Crispy Squares,8.9,80.5,3.5,409
+ ,Whey,3.4,10.2,81.6,408
+ ,Milk chocolate raisins,22.5,62.5,5,400
+ ,Refried Beans,4.5,69,21,390
+ ,Rolled Oats,6.2,69,13.6,379
+ ,Good Hemp Protein Drink,12.6,15.4,47,370
+ ,Quinoa,6,64,14,368
+ ,Chick peas,6,61,19,364
+ ,Dried mango,0,90.9,0,363.6
+ ,Split Red Lentils,1.5,60,28,360
+ ,Barley,2.3,73,12,354
+ ,Barley,2.3,73,12,354
+ ,Fig Newton,6.5,71,3.2,354
+ ,Cherry's,0,82.5,2.5,350
+ ,Cantaloupe,0,87.5,2,350
+ ,Papaya,0,87.5,0,350
+ ,Mung beans,1.2,63,24,347
+ ,Buckwheat Groats,2.7,75,12,346
+ ,Muesli,4.7,77.6,1.4,340
+ ,Romano,26.6,0,33.3,333.3
+ ,Cheddar,26.6,0,20,333.3
+ ,Pineapple,0,85.7,2.4,333.3
+ ,Beef Jerky,25,10,35,333
+ ,Dried Blueberry,2.5,80,2.5,325
+ ,Goji berries,0,85.7,14.3,321.4
+ ,Dried Cranberry,1.4,82,0.1,308
+ ,Raisin,0.5,79,3.1,299
+ ,Currants,0,74.3,4.2,283
+ ,Dried Date,0.15,75,1.8,277
+ ,Dried Apples,0,66.3,1.2,243
+ ,Dries Appricot,0.5,63,3.4,241
+ ,Dried Prune,0.4,64,2.2,240
+ ,Peaches,0.6,61.3,3.8,238.8
+ ,Marmite,0.1,19.2,28.4,231
+ ,Lima beans,0.4,21,8,115
+ ,Vegemite,0,10,12.2,100
