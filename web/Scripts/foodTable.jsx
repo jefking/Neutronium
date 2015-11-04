@@ -1,10 +1,4 @@
-﻿var data = [
-  { Author: "Daniel Lo Nigro", Text: "Hello ReactJS.NET World!" },
-  { Author: "Pete Hunt", Text: "This is one comment" },
-  { Author: "Jordan Walke", Text: "This is *another* comment" }
-];
-
-var DataTable = React.createClass({
+﻿var DataTable = React.createClass({
     render: function() {
         return (
           <table class="table table-hover">
@@ -19,8 +13,16 @@ var DataTable = React.createClass({
                 <td>Cal/100gr</td>
                 <td>Sparkline</td>
             </tr>
-            <tr>
-                <td></td>
+            <DataRows data={this.props.data} />
+          </table>
+      );
+    }
+});
+var DataRows = React.createClass({
+    render: function (food) {
+        return (
+             <tr>
+                <td>{food.Name}</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -30,11 +32,10 @@ var DataTable = React.createClass({
                 <td></td>
                 <td></td>
             </tr>
-        </table>
-      );
+          );
     }
 });
 React.render(
-  <DataTable data={data} />,
+  <DataTable url="/api/nutrition" />,
   document.getElementById('data')
 );
