@@ -1,4 +1,10 @@
-﻿var DataTable = React.createClass({
+﻿var data = [
+  { Author: "Daniel Lo Nigro", Text: "Hello ReactJS.NET World!" },
+  { Author: "Pete Hunt", Text: "This is one comment" },
+  { Author: "Jordan Walke", Text: "This is *another* comment" }
+];
+
+var DataTable = React.createClass({
     render: function() {
         return (
           <table class="table table-hover">
@@ -29,6 +35,6 @@
     }
 });
 React.render(
-  <DataTable />,
+  <DataTable data={data} />,
   document.getElementById('data')
 );
