@@ -13,28 +13,26 @@
                     <td>Cal/100gr</td>
                     <td>Sparkline</td>
                 </tr>
-                <DataRows data={this.props.data} />
+                   <tbody>
+                       {rows}
+                   </tbody> 
                 </table>
         );
     }
 });
-var DataRows = React.createClass({
-    render: function (food) {
-        return (
-            <tr>
-                <td>b</td>
-                <td>a</td>
-                <td>r</td>
-                <td>e</td>
-                <td>d</td>
-                <td>b</td>
-                <td>a</td>
-                <td>z</td>
-                <td>x</td>
-            </tr>
-        );
-    }
-});
+function rows(food) {
+    return [
+            <td>{food.Name}</td>,
+            <td>a</td>,
+            <td>r</td>,
+            <td>e</td>,
+            <td>d</td>,
+            <td>b</td>,
+            <td>a</td>,
+            <td>z</td>,
+            <td>x</td>,
+    ];
+};
 React.render(
     <DataTable url="/api/nutrition" />,
     document.getElementById('data')
