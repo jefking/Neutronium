@@ -28,6 +28,9 @@
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>1.6</TypeScriptToolsVersion>
   </PropertyGroup>
+  <PropertyGroup>
+    <TypeScriptJSXEmit>react</TypeScriptJSXEmit>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -279,6 +282,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\foodDisplay.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
@@ -306,9 +310,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Scripts\foodTable.jsx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
