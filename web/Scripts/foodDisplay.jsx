@@ -1,7 +1,8 @@
 ﻿var DataTable = React.createClass({
     render: function () {
         return (
-            <table class="table table-hover">
+            <table className="table table-hover">
+                <thead>
                 <tr>
                     <td>Name</td>
                     <td>Fat</td>
@@ -13,6 +14,7 @@
                     <td>Cal/100gr</td>
                     <td>Sparkline</td>
                 </tr>
+                </thead>
                    <tbody>
                        {rows}
                    </tbody> 
