@@ -7,7 +7,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutronium</title>
-
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -32,12 +31,11 @@
     <footer>
         <p>&copy; @DateTime.Now.Year - Jef King</p>
     </footer>
-
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
     <script src="https://fb.me/react-0.14.0.min.js"></script>
     <script src="https://fb.me/react-dom-0.14.0.min.js"></script>
     <script src="@Url.Content("~/Scripts/showdown.min.js")"></script>
-    <script src="@Url.Content("~/Scripts/foodDisplay.js")"></script>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    <script src="@Url.Content("~/Scripts/foodDisplay.jsx")"></script>
 </body>
 </html>
