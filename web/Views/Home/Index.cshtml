@@ -25,13 +25,13 @@
         <tr ng-repeat="food in foods">
             <td>{{food.Name}}</td>
             <td>{{food.Fat}}</td>
-            <td>{{food.FatPercentage}}%</td>
+            <td>{{(food.Fat /(food.Fat + food.Carb + food.Protien)) * 100}}%</td>
             <td>{{food.Carb}}</td>
-            <td>{{food.CarbPercentage}}%</td>
+            <td>{{(food.Carb /(food.Fat + food.Carb + food.Protien)) * 100}}%</td>
             <td>{{food.Protien}}</td>
-            <td>{{food.ProtienPercentage}}%</td>
+            <td>{{(food.Protien /(food.Fat + food.Carb + food.Protien)) * 100}}%</td>
             <td>{{food.CalPerHundred}}</td>
-            <td>{{food.Grams}}</td>
+            <td>100</td>
         </tr>
     </table>
 </body>
