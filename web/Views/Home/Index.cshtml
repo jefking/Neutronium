@@ -1,41 +1,18 @@
-﻿@{
-    Layout = null;
-}
-<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html lang="en" ng-app="nutritionApp">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutronium</title>
+    <meta charset="utf-8">
+    <title>Nutritions</title>
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <script src="//angular.github.io/angular-phonecat/step-2/app/bower_components/angular/angular.js"></script>
+    <script src="/scripts/foods.js"></script>
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nutronium", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        <div id="data">
-        </div>
-    </div>
-    <hr />
-    <footer>
-        <p>&copy; @DateTime.Now.Year - Jef King</p>
-    </footer>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    <script src="https://fb.me/react-0.14.0.min.js"></script>
-    <script src="https://fb.me/react-dom-0.14.0.min.js"></script>
-    <script src="@Url.Content("~/Scripts/showdown.min.js")"></script>
-    <script src="@Url.Content("~/Scripts/foodDisplay.jsx")"></script>
+<body ng-controller="nutrition">
+    <ul>
+        <li ng-repeat="food in foods">
+            <span>{{phone.Name}}</span>
+            <p>{{phone.Fat}}</p>
+        </li>
+    </ul>
 </body>
 </html>

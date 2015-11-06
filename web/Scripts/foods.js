@@ -1,22 +1,9 @@
 ﻿'use strict';
 
-/* Controllers */
+var nutritionApp = angular.module('nutritionApp', []);
 
-var phonecatApp = angular.module('nutrition', []);
-
-phonecatApp.controller('foods', function ($scope) {
-    $scope.phones = [
-      {
-          'name': 'Nexus S',
-          'snippet': 'Fast just got faster with Nexus S.'
-      },
-      {
-          'name': 'Motorola XOOM™ with Wi-Fi',
-          'snippet': 'The Next, Next Generation tablet.'
-      },
-      {
-          'name': 'MOTOROLA XOOM™',
-          'snippet': 'The Next, Next Generation tablet.'
-      }
-    ];
-});
+nutritionApp.controller('nutrition', ['$scope', '$http', function ($scope, $http) {
+    $http.get('/api/nutrition').success(function (data) {
+        $scope.foods = data;
+    });
+}]);

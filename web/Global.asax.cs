@@ -1,15 +1,9 @@
 ﻿namespace web
 {
-    using System.Configuration;
     using System.Web.Http;
     using System.Web.Mvc;
     using System.Web.Optimization;
     using System.Web.Routing;
-    using King.Azure.Data;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
-    using System.Net.Http.Formatting;
-    using System.Net.Http.Headers;
 
     public class MvcApplication : System.Web.HttpApplication
     {
