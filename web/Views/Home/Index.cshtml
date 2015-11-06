@@ -9,14 +9,30 @@
 </head>
 <body ng-controller="nutrition">
     <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
-        <tr>
-            <td>Name</td>
-            <td>Fat</td>
-        </tr>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Fat</td>
+                <td>Fat %</td>
+                <td>Carb</td>
+                <td>Carb %</td>
+                <td>Protien</td>
+                <td>Protien %</td>
+                <td>Calories per 100g</td>
+                <td>Grams</td>
+            </tr>
+        </thead>
         <tr ng-repeat="food in foods">
             <td>{{food.Name}}</td>
             <td>{{food.Fat}}</td>
+            <td>{{food.FatPercentage}}%</td>
+            <td>{{food.Carb}}</td>
+            <td>{{food.CarbPercentage}}%</td>
+            <td>{{food.Protien}}</td>
+            <td>{{food.ProtienPercentage}}%</td>
+            <td>{{food.CalPerHundred}}</td>
+            <td>{{food.Grams}}</td>
         </tr>
-        </table>
+    </table>
 </body>
 </html>
