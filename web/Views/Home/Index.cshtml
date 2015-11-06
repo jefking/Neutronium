@@ -8,7 +8,10 @@
     <script src="/scripts/foods.js"></script>
 </head>
 <body ng-controller="nutrition">
-    Search: <input ng-model="query">
+    <div class="input-group">
+        <div class="input-group-addon">&gt;</div>
+        <input ng-model="query" type="text" class="form-control" placeholder="Filter..." />
+    </div>
     <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
         <thead>
             <tr>
