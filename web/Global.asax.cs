@@ -6,6 +6,10 @@
     using System.Web.Optimization;
     using System.Web.Routing;
     using King.Azure.Data;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    using System.Net.Http.Formatting;
+    using System.Net.Http.Headers;
 
     public class MvcApplication : System.Web.HttpApplication
     {
@@ -16,10 +20,10 @@
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            var connectionString = ConfigurationManager.AppSettings["datastore"];
-            var store = new TableStorage("foods", connectionString);
-            store.CreateIfNotExists().Wait();
+            
+            //var connectionString = ConfigurationManager.AppSettings["datastore"];
+            //var store = new TableStorage("foods", connectionString);
+            //store.CreateIfNotExists().Wait();
         }
     }
 }

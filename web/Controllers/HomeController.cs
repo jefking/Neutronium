@@ -8,5 +8,9 @@
         {
             return View();
         }
+        public ActionResult Angular()
+        {
+            return View();
+        }
     }
 }
