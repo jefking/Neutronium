@@ -7,3 +7,10 @@ nutritionApp.controller('nutrition', ['$scope', '$http', function ($scope, $http
         $scope.foods = data;
     });
 }]);
+
+nutritionApp.controller('picked', ['$scope', function ($scope) {
+    $scope.counter = 0;
+    $scope.change = function() {
+        $scope.counter++;
+    };
+}]);
