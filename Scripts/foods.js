@@ -3,7 +3,7 @@
 var nutritionApp = angular.module('nutritionApp', []);
 
 nutritionApp.controller('nutrition', ['$scope', '$http', function ($scope, $http) {
-    $http.get('Scripts/foodData.js').success(function (data) {
+    $http.get('Scripts/data.json').success(function (data) {
         $scope.foods = data;
     });
 }]);
