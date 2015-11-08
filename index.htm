@@ -15,6 +15,15 @@
             </div>
         </div>
     </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-controller="displaySelected">
+          <h1 class="page-header">Selection</h1>
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder" ng-repeat="item in selected">
+              <h4>{{item.Name}}</h4>
+              <span class="text-muted">{{item.Fat}}/{{item.Carb}}/{{item.Protien}}</span>
+            </div>
+          </div>
+    </div>
     <div ng-controller="sort">
         <table id="example" class="table table-striped table-bordered" cellspacing="0" ng-controller="nutrition">
             <thead>
@@ -64,11 +73,6 @@
                 <td class="hidden-xs hidden-sm"><a href="https://en.wikipedia.org/wiki/{{food.Name}}" target="_blank" class="hidden-xs hidden-sm">info</a></td>
             </tr>
         </table>
-    </div>
-    <div ng-controller="displaySelected">
-        <ul>
-            <li ng-repeat="item in selected">{{item.Name}}</li>
-        </ul>
     </div>
     <div>
         <strong>To Do</strong>
