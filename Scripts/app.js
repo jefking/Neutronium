@@ -20,7 +20,7 @@ nutritionApp.controller('picked', ['$scope', function ($scope) {
 nutritionApp.controller('sort', ['$scope', function($scope) {
     $scope.foods = Foods;
     $scope.predicate = 'Name';
-    $scope.reverse = true;
+    $scope.reverse = false;
     $scope.order = function(predicate) {
         $scope.reverse = ($scope.predicate === predicate) ? !$scope.reverse : false;
         $scope.predicate = predicate;
