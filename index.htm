@@ -44,7 +44,7 @@
                 </th>
                 <th class="hidden-xs hidden-sm">Grams</th>
             </thead>
-            <tr ng-repeat="food in foods | filter:query | orderBy:predicate:reverse">
+            <tr ng-repeat="food in foods | filter:query | orderBy: 'Name'">
                 <td class="hidden-xs hidden-sm">
                     <div class="checkbox" ng-controller="picked">
                         <label>
