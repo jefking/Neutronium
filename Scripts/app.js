@@ -11,11 +11,18 @@ nutritionApp.controller('nutrition', ['$scope', '$http', function ($scope, $http
 }]);
 
 nutritionApp.controller('picked', ['$scope', function ($scope) {
-    //$scope.counter = 0;
     $scope.change = function() {
-        //$scope.counter++;
-        selected.push($scope.food);
-        console.log(selected);
+        if ($scope.confirmed){
+            selected.push($scope.food);
+        }
+        else {
+            $.each(selected, function(i){
+                if(selected[i].Name === $scope.food.Name) {
+                    selected.splice(i,1);
+                    return false;
+                }
+            });
+        }
     };
 }]);
 
