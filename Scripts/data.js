@@ -10,9 +10,9 @@
     {
 
         "Name": "Macadamia",
-        "Fat": 76,
-        "Carb": 14,
-        "Protien": 8,
+        "Fat": 75.8,
+        "Carb": 13.8,
+        "Protien": 7.9,
         "CalPerHundred": 740
     },
     {
@@ -48,7 +48,6 @@
         "CalPerHundred": 690
     },
     {
-
         "Name": "Pine Nuts",
         "Fat": 68,
         "Carb": 13,
@@ -470,14 +469,6 @@
         "Carb": 60,
         "Protien": 28,
         "CalPerHundred": 360
-    },
-    {
-
-        "Name": "Barley",
-        "Fat": 2.3,
-        "Carb": 73,
-        "Protien": 12,
-        "CalPerHundred": 354
     },
     {
 

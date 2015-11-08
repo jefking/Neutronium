@@ -43,6 +43,7 @@
                     <span class="sortorder" ng-show="predicate === 'CalPerHundred'" ng-class="{reverse:reverse}"></span>
                 </th>
                 <th class="hidden-xs hidden-sm">Grams</th>
+                <th class="hidden-xs hidden-sm">More</th>
             </thead>
             <tr ng-repeat="food in foods | filter:query | orderBy:predicate:reverse">
                 <td>
@@ -50,7 +51,9 @@
                         <label>
                             <input type="checkbox" data-ng-model="confirmed" ng-change="change()" value="">{{food.Name}}
                         </label>
-                    </div></td>
+                    </div>
+                    
+                </td>
                 <td>{{food.Fat}}</td>
                 <td class="hidden-xs hidden-sm">{{((food.Fat /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
                 <td>{{food.Carb}}</td>
@@ -59,6 +62,7 @@
                 <td class="hidden-xs hidden-sm">{{((food.Protien /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
                 <td>{{food.CalPerHundred}}</td>
                 <td class="hidden-xs hidden-sm">100</td>
+                <td class="hidden-xs hidden-sm"><a href="https://en.wikipedia.org/wiki/{{food.Name}}" target="_blank" class="hidden-xs hidden-sm">info</a></td>
             </tr>
         </table>
     </div>
