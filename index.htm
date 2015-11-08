@@ -65,11 +65,16 @@
             </tr>
         </table>
     </div>
+    <div ng-controller="displaySelected">
+        <ul>
+            <li ng-repeat="item in selected">{{item.Name}}</li>
+        </ul>
+    </div>
     <div>
         <strong>To Do</strong>
             <ul>
+                <li>Add selected items to list</li>
                 <li>Search for product images, from BING</li>
-                <li>Build list of items from Check boxes</li>
                 <li>Set amounts to use: form for building contents</li>
                 <li>more data, start collecting more product information</li>
                 <li>switch between ounce and grams</li>

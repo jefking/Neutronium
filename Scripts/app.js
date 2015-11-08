@@ -34,3 +34,7 @@ nutritionApp.controller('sort', ['$scope', function($scope) {
         $scope.predicate = predicate;
     }
 }]);
+
+nutritionApp.controller('displaySelected', ['$scope', function ($scope) {
+    $scope.selected = selected;
+}]);
