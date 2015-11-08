@@ -9,13 +9,12 @@
 </head>
 <body>
     <div class="input-group">
-        <div class="input-group-addon">&gt;</div>
-        <input ng-model="query" type="text" class="form-control" placeholder="Filter..." />
+        <input ng-model="query" type="text" class="form-control search-query" placeholder="Filter..." /><i class="icon-search"></i>
     </div>
     <div ng-controller="sort">
         <table id="example" class="table table-striped table-bordered" cellspacing="0" ng-controller="nutrition">
             <thead>
-                <th></th>
+                <th class="hidden-xs hidden-sm"></th>
                 <th>
                     <a href="" ng-click="order('Name')">Name</a>
                     <span class="sortorder" ng-show="predicate === 'Name'" ng-class="{reverse:reverse}"></span>
@@ -39,10 +38,10 @@
                     <a href="" ng-click="order('CalPerHundred')">Calories</a>
                     <span class="sortorder" ng-show="predicate === 'CalPerHundred'" ng-class="{reverse:reverse}"></span>
                 </th>
-                <th>Grams</th>
+                <th class="hidden-xs hidden-sm">Grams</th>
             </thead>
             <tr ng-repeat="food in foods | filter:query | orderBy:predicate:reverse">
-                <td>
+                <td class="hidden-xs hidden-sm">
                     <div class="checkbox" ng-controller="picked">
                         <label>
                             <input type="checkbox" ng-model="confirmed" ng-change="change()" value="">
@@ -57,7 +56,7 @@
                 <td>{{food.Protien}}</td>
                 <td class="hidden-xs hidden-sm">{{((food.Protien /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
                 <td>{{food.CalPerHundred}}</td>
-                <td>100</td>
+                <td class="hidden-xs hidden-sm">100</td>
             </tr>
         </table>
     </div>
