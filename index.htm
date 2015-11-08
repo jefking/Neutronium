@@ -2,7 +2,8 @@
 <html lang="en" ng-app="nutritionApp">
 <head>
     <meta charset="utf-8">
-    <title>Nutritions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritions: Mix Builder</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/Site.css" rel="stylesheet" />
 </head>
@@ -23,17 +24,17 @@
                     <a href="" ng-click="order('Fat')">Fat</a>
                     <span class="sortorder" ng-show="predicate === 'Fat'" ng-class="{reverse:reverse}"></span>
                 </th>
-                <th>Fat %</th>
+                <th class="hidden-xs hidden-sm">Fat %</th>
                 <th>
                     <a href="" ng-click="order('Carb')">Carb</a>
                     <span class="sortorder" ng-show="predicate === 'Carb'" ng-class="{reverse:reverse}"></span>
                 </th>
-                <th>Carb %</th>
+                <th class="hidden-xs hidden-sm">Carb %</th>
                 <th>
                     <a href="" ng-click="order('Protien')">Protien</a>
                     <span class="sortorder" ng-show="predicate === 'Protien'" ng-class="{reverse:reverse}"></span>
                 </th>
-                <th>Protien %</th>
+                <th class="hidden-xs hidden-sm">Protien %</th>
                 <th>
                     <a href="" ng-click="order('CalPerHundred')">Calories</a>
                     <span class="sortorder" ng-show="predicate === 'CalPerHundred'" ng-class="{reverse:reverse}"></span>
@@ -50,11 +51,11 @@
                 </td>
                 <td>{{food.Name}}</td>
                 <td>{{food.Fat}}</td>
-                <td>{{((food.Fat /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
+                <td class="hidden-xs hidden-sm">{{((food.Fat /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
                 <td>{{food.Carb}}</td>
-                <td>{{((food.Carb /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
+                <td class="hidden-xs hidden-sm">{{((food.Carb /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
                 <td>{{food.Protien}}</td>
-                <td>{{((food.Protien /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
+                <td class="hidden-xs hidden-sm">{{((food.Protien /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
                 <td>{{food.CalPerHundred}}</td>
                 <td>100</td>
             </tr>
