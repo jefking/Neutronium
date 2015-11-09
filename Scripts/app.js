@@ -51,6 +51,8 @@ nutritionApp.controller('displaySelected', ['$scope', function ($scope) {
             $scope.CarbPercentageTotal += selected[i].Carb;
         });
         
-        $scope.FatPercentageTotal
+        $scope.FatPercentageTotal = $scope.FatPercentageTotal / totals * 100
+        $scope.ProtienPercentageTotal = $scope.ProtienPercentageTotal / totals * 100
+        $scope.CarbPercentageTotal = $scope.CarbPercentageTotal / totals * 100
     });
 }]);
