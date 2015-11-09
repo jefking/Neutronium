@@ -25,9 +25,9 @@
         <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder" ng-repeat="item in selected">
                 <h4>{{item.Name}}</h4>
-                <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{item.Fat}}</span>
-                <span class="text-muted"><i class="glyphicon glyphicon-leaf"></i>&nbsp;{{item.Carb}}</span>
                 <span class="text-muted"><i class="glyphicon glyphicon-cog"></i>&nbsp;{{item.Protien}}</span>
+                <span class="text-muted"><i class="glyphicon glyphicon-leaf"></i>&nbsp;{{item.Carb}}</span>
+                <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{item.Fat}}</span>
             </div>
         </div>
         <div class="row">
@@ -39,9 +39,9 @@
             </div>
             <div class="col-lg-6">
                 <div class="input-group">
-                    <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{FatPercentageTotal.toFixed(1)}}</span>
-                    <span class="text-muted"><i class="glyphicon glyphicon-leaf"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-cog"></i>&nbsp;{{ProtienPercentageTotal.toFixed(1)}}</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-leaf"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{FatPercentageTotal.toFixed(1)}}</span>
                 </div>
             </div>
         </div>
@@ -55,20 +55,20 @@
                     <span class="sortorder" ng-show="predicate === 'Name'" ng-class="{reverse:reverse}"></span>
                 </th>
                 <th>
-                    <a href="" ng-click="order('Fat')">Fat</a>
-                    <span class="sortorder" ng-show="predicate === 'Fat'" ng-class="{reverse:reverse}"></span>
-                </th>
-                <th class="hidden-xs hidden-sm">Fat %</th>
-                <th>
-                    <a href="" ng-click="order('Carb')">Carb</a>
-                    <span class="sortorder" ng-show="predicate === 'Carb'" ng-class="{reverse:reverse}"></span>
-                </th>
-                <th class="hidden-xs hidden-sm">Carb %</th>
-                <th>
-                    <a href="" ng-click="order('Protien')">Protien</a>
+                    <a href="" ng-click="order('Protien')"><i class="glyphicon glyphicon-cog"></i>&nbsp;Protien</a>
                     <span class="sortorder" ng-show="predicate === 'Protien'" ng-class="{reverse:reverse}"></span>
                 </th>
-                <th class="hidden-xs hidden-sm">Protien %</th>
+                <th class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-cog"></i>&nbsp;Protien %</th>
+                <th>
+                    <a href="" ng-click="order('Carb')"><i class="glyphicon glyphicon-leaf"></i>&nbsp;Carbohydrate</a>
+                    <span class="sortorder" ng-show="predicate === 'Carb'" ng-class="{reverse:reverse}"></span>
+                </th>
+                <th class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-leaf"></i>&nbsp;Carbohydrate %</th>
+                <th>
+                    <a href="" ng-click="order('Fat')"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;Fat</a>
+                    <span class="sortorder" ng-show="predicate === 'Fat'" ng-class="{reverse:reverse}"></span>
+                </th>
+                <th class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;Fat %</th>
                 <th>
                     <a href="" ng-click="order('CalPerHundred')">Calories</a>
                     <span class="sortorder" ng-show="predicate === 'CalPerHundred'" ng-class="{reverse:reverse}"></span>
@@ -84,12 +84,12 @@
                         </label>
                     </div>
                 </td>
-                <td class="text-right">{{food.Fat}}</td>
-                <td class="text-right hidden-xs hidden-sm">{{((food.Fat /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
-                <td class="text-right">{{food.Carb}}</td>
-                <td class="text-right hidden-xs hidden-sm">{{((food.Carb /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
                 <td class="text-right">{{food.Protien}}</td>
                 <td class="text-right hidden-xs hidden-sm">{{((food.Protien /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
+                <td class="text-right">{{food.Carb}}</td>
+                <td class="text-right hidden-xs hidden-sm">{{((food.Carb /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
+                <td class="text-right">{{food.Fat}}</td>
+                <td class="text-right hidden-xs hidden-sm">{{((food.Fat /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
                 <td class="text-right">{{food.CalPerHundred}}</td>
                 <td class="text-right hidden-xs hidden-sm">100</td>
                 <td class="text-center hidden-xs hidden-sm"><a href="https://en.wikipedia.org/wiki/{{food.Name}}" target="_blank" class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-link"></i></a></td>
