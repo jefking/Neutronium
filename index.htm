@@ -25,7 +25,9 @@
         <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder" ng-repeat="item in selected">
                 <h4>{{item.Name}}</h4>
-                <span class="text-muted">F: {{item.Fat}} C: {{item.Carb}} P: {{item.Protien}}</span>
+                <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{item.Fat}}</span>
+                <span class="text-muted"><i class="glyphicon glyphicon-leaf"></i>&nbsp;{{item.Carb}}</span>
+                <span class="text-muted"><i class="glyphicon glyphicon-cog"></i>&nbsp;{{item.Protien}}</span>
             </div>
         </div>
         <div class="row">
@@ -37,9 +39,9 @@
             </div>
             <div class="col-lg-6">
                 <div class="input-group">
-                    Fat %: {{FatPercentageTotal.toFixed(1)}}
-                    Protien %: {{ProtienPercentageTotal.toFixed(1)}}
-                    Carbohydrate %: {{CarbPercentageTotal.toFixed(1)}}
+                    <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{FatPercentageTotal.toFixed(1)}}</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-leaf"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-cog"></i>&nbsp;{{ProtienPercentageTotal.toFixed(1)}}</span>
                 </div>
             </div>
         </div>
