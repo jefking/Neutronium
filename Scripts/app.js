@@ -16,8 +16,8 @@ nutritionApp.controller('picked', ['$scope', function ($scope) {
             selected.push($scope.food);
         }
         else {
-            $.each(selected, function(i){
-                if(selected[i].Name === $scope.food.Name) {
+            $.each(selected, function(i) {
+                if (selected[i].Name === $scope.food.Name) {
                     selected.splice(i,1);
                     return false;
                 }
@@ -38,7 +38,15 @@ nutritionApp.controller('sort', ['$scope', function($scope) {
 nutritionApp.controller('displaySelected', ['$scope', function ($scope) {
     $scope.selected = selected;
     
-    $scope.FatPercentageTotal = 99;
-    $scope.ProtienPercentageTotal = 900;
-    $scope.CarbPercentageTotal = 22;
+    $scope.FatPercentageTotal = 0;
+    $scope.ProtienPercentageTotal = 0;
+    $scope.CarbPercentageTotal = 0;
+    
+    $scope.$watchCollection("selected", function( newValue, oldValue ) {
+        $.each(selected, function(i) {
+            $scope.FatPercentageTotal += selected[i].Fat;
+            $scope.ProtienPercentageTotal += selected[i].Protien;
+            $scope.CarbPercentageTotal += selected[i].Carb;
+        });
+    });
 }]);
