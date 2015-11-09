@@ -25,24 +25,19 @@
         <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder" ng-repeat="item in selected">
                 <h4>{{item.Name}}</h4>
+                <div class="input-group">
+                    <input type="number" class="form-control" name="quantity" id="quantity" value="100" min="10" max="10000" step="10" />
+                    <span class="input-group-addon" id="sizing-addon1">Gr</span>
+                </div>
                 <span class="text-muted"><i class="glyphicon glyphicon-cog"></i>&nbsp;{{item.Protien}}</span>
                 <span class="text-muted"><i class="glyphicon glyphicon-leaf"></i>&nbsp;{{item.Carb}}</span>
                 <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{item.Fat}}</span>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="input-group">
-                    <input type="number" class="form-control" name="quantity" id="quantity" value="1" min="1" max="100" />
-                    <span class="input-group-addon" id="sizing-addon1">KG</span>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="input-group">
-                    <span class="text-muted"><i class="glyphicon glyphicon-cog"></i>&nbsp;{{ProtienPercentageTotal.toFixed(1)}}</span>
-                    <span class="text-muted"><i class="glyphicon glyphicon-leaf"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}</span>
-                    <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{FatPercentageTotal.toFixed(1)}}</span>
-                </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+                <h4>Totals</h4>
+                <span class="text-muted"><i class="glyphicon glyphicon-cog"></i>&nbsp;{{ProtienPercentageTotal.toFixed(1)}}</span>
+                <span class="text-muted"><i class="glyphicon glyphicon-leaf"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}</span>
+                <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{FatPercentageTotal.toFixed(1)}}</span>
             </div>
         </div>
     </div>
