@@ -25,7 +25,7 @@
         <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder" ng-repeat="item in selected">
                 <h4>{{item.Name}}</h4>
-                <span class="text-muted">{{item.Fat}}/{{item.Carb}}/{{item.Protien}}</span>
+                <span class="text-muted">F: {{item.Fat}} C: {{item.Carb}} P: {{item.Protien}}</span>
             </div>
         </div>
         <div class="row">
@@ -90,7 +90,7 @@
                 <td class="text-right hidden-xs hidden-sm">{{((food.Protien /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
                 <td class="text-right">{{food.CalPerHundred}}</td>
                 <td class="text-right hidden-xs hidden-sm">100</td>
-                <td class="text-center hidden-xs hidden-sm"><a href="https://en.wikipedia.org/wiki/{{food.Name}}" target="_blank" class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-globe"></i></a></td>
+                <td class="text-center hidden-xs hidden-sm"><a href="https://en.wikipedia.org/wiki/{{food.Name}}" target="_blank" class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-link"></i></a></td>
             </tr>
         </table>
     </div>
