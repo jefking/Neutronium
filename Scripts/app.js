@@ -38,15 +38,19 @@ nutritionApp.controller('sort', ['$scope', function($scope) {
 nutritionApp.controller('displaySelected', ['$scope', function ($scope) {
     $scope.selected = selected;
     
-    $scope.FatPercentageTotal = 0;
-    $scope.ProtienPercentageTotal = 0;
-    $scope.CarbPercentageTotal = 0;
-    
     $scope.$watchCollection("selected", function( newValue, oldValue ) {
+        $scope.FatPercentageTotal = 0;
+        $scope.ProtienPercentageTotal = 0;
+        $scope.CarbPercentageTotal = 0;
+        var totals = 0;
+    
         $.each(selected, function(i) {
+            totals += selected[i].Fat + selected[i].Protien + selected[i].Carb;
             $scope.FatPercentageTotal += selected[i].Fat;
             $scope.ProtienPercentageTotal += selected[i].Protien;
             $scope.CarbPercentageTotal += selected[i].Carb;
         });
+        
+        $scope.FatPercentageTotal
     });
 }]);

@@ -37,9 +37,9 @@
             </div>
             <div class="col-lg-6">
                 <div class="input-group">
-                    Fat %: {{FatPercentageTotal.toFixed(2)}}
-                    Protien %: {{ProtienPercentageTotal.toFixed(2)}}
-                    Carbohydrate %: {{CarbPercentageTotal.toFixed(2)}}
+                    Fat %: {{FatPercentageTotal.toFixed(1)}}
+                    Protien %: {{ProtienPercentageTotal.toFixed(1)}}
+                    Carbohydrate %: {{CarbPercentageTotal.toFixed(1)}}
                 </div>
             </div>
         </div>
@@ -83,11 +83,11 @@
                     </div>
                 </td>
                 <td class="text-right">{{food.Fat}}</td>
-                <td class="text-right hidden-xs hidden-sm">{{((food.Fat /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
+                <td class="text-right hidden-xs hidden-sm">{{((food.Fat /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
                 <td class="text-right">{{food.Carb}}</td>
-                <td class="text-right hidden-xs hidden-sm">{{((food.Carb /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
+                <td class="text-right hidden-xs hidden-sm">{{((food.Carb /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
                 <td class="text-right">{{food.Protien}}</td>
-                <td class="text-right hidden-xs hidden-sm">{{((food.Protien /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
+                <td class="text-right hidden-xs hidden-sm">{{((food.Protien /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
                 <td class="text-right">{{food.CalPerHundred}}</td>
                 <td class="text-right hidden-xs hidden-sm">100</td>
                 <td class="text-center hidden-xs hidden-sm"><a href="https://en.wikipedia.org/wiki/{{food.Name}}" target="_blank" class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-globe"></i></a></td>
