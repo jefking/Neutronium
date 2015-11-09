@@ -37,4 +37,8 @@ nutritionApp.controller('sort', ['$scope', function($scope) {
 
 nutritionApp.controller('displaySelected', ['$scope', function ($scope) {
     $scope.selected = selected;
+    
+    $scope.FatPercentageTotal = 99;
+    $scope.ProtienPercentageTotal = 900;
+    $scope.CarbPercentageTotal = 22;
 }]);

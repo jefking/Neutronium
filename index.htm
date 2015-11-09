@@ -35,6 +35,13 @@
                     <span class="input-group-addon" id="sizing-addon1">KG</span>
                 </div>
             </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    Fat %: {{FatPercentageTotal}}
+                    Protien %: {{ProtienPercentageTotal}}
+                    Carbohydrate %: {{CarbPercentageTotal}}
+                </div>
+            </div>
         </div>
     </div>
     <h2 class="header">Contents</h2>
@@ -65,7 +72,7 @@
                     <span class="sortorder" ng-show="predicate === 'CalPerHundred'" ng-class="{reverse:reverse}"></span>
                 </th>
                 <th class="hidden-xs hidden-sm">Grams</th>
-                <th class="hidden-xs hidden-sm">More</th>
+                <th class="hidden-xs hidden-sm"></th>
             </thead>
             <tr ng-repeat="food in foods | filter:query | orderBy:predicate:reverse">
                 <td>
@@ -75,15 +82,15 @@
                         </label>
                     </div>
                 </td>
-                <td>{{food.Fat}}</td>
-                <td class="hidden-xs hidden-sm">{{((food.Fat /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
-                <td>{{food.Carb}}</td>
-                <td class="hidden-xs hidden-sm">{{((food.Carb /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
-                <td>{{food.Protien}}</td>
-                <td class="hidden-xs hidden-sm">{{((food.Protien /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
-                <td>{{food.CalPerHundred}}</td>
-                <td class="hidden-xs hidden-sm">100</td>
-                <td class="hidden-xs hidden-sm"><a href="https://en.wikipedia.org/wiki/{{food.Name}}" target="_blank" class="hidden-xs hidden-sm">info</a></td>
+                <td class="text-right">{{food.Fat}}</td>
+                <td class="text-right hidden-xs hidden-sm">{{((food.Fat /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
+                <td class="text-right">{{food.Carb}}</td>
+                <td class="text-right hidden-xs hidden-sm">{{((food.Carb /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
+                <td class="text-right">{{food.Protien}}</td>
+                <td class="text-right hidden-xs hidden-sm">{{((food.Protien /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(2)}}%</td>
+                <td class="text-right">{{food.CalPerHundred}}</td>
+                <td class="text-right hidden-xs hidden-sm">100</td>
+                <td class="text-center hidden-xs hidden-sm"><a href="https://en.wikipedia.org/wiki/{{food.Name}}" target="_blank" class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-globe"></i></a></td>
             </tr>
         </table>
     </div>
