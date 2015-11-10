@@ -479,7 +479,6 @@
         "CalPerHundred": 354
     },
     {
-
         "Name": "Fig Newton",
         "Fat": 6.5,
         "Carb": 71,
@@ -487,7 +486,6 @@
         "CalPerHundred": 354
     },
     {
-
         "Name": "Cherry's",
         "Fat": 0,
         "Carb": 82.5,
@@ -495,7 +493,6 @@
         "CalPerHundred": 350
     },
     {
-
         "Name": "Dried Cantaloupe",
         "Fat": 0,
         "Carb": 87.5,
@@ -503,7 +500,6 @@
         "CalPerHundred": 350
     },
     {
-
         "Name": "Papaya",
         "Fat": 0,
         "Carb": 87.5,
@@ -511,7 +507,6 @@
         "CalPerHundred": 350
     },
     {
-
         "Name": "Mung beans",
         "Fat": 1.2,
         "Carb": 63,
@@ -519,7 +514,6 @@
         "CalPerHundred": 347
     },
     {
-
         "Name": "Buckwheat Groats",
         "Fat": 2.7,
         "Carb": 75,
