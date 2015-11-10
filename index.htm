@@ -21,6 +21,16 @@
         </div>
     </div>
     <div class="container-fluid">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <strong>To Do</strong>
+            <ul class="nav nav-sidebar">
+                <li>Search for product images, from BING</li>
+                <li>Set amounts to use: form for building contents</li>
+                <li>deepen metrics, with more precise numbers</li>
+                <li>more data, start collecting more product information</li>
+                <li>switch between ounce and grams</li>
+            </ul>
+        </div>
         <div class="col-md-10 main" ng-controller="displaySelected">
             <h1 class="page-header">Mixer</h1>
             <div class="row placeholders">
@@ -31,7 +41,7 @@
                         <span class="input-group-addon" id="sizing-addon1">Gr</span>
                     </div>
                     <span class="text-muted"><i class="glyphicon glyphicon-cog"></i>&nbsp;{{item.Protien}}</span>
-                    <span class="text-muted"><i class="glyphicon glyphicon-leaf"></i>&nbsp;{{item.Carb}}</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-flash"></i>&nbsp;{{item.Carb}}</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{item.Fat}}</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{item.CalPerHundred}}</span>
                 </div>
@@ -42,7 +52,7 @@
                         <span class="input-group-addon" id="sizing-addon1">Gr</span>
                     </div>
                     <span class="text-muted"><i class="glyphicon glyphicon-cog"></i>&nbsp;{{ProtienPercentageTotal.toFixed(1)}}%</span>
-                    <span class="text-muted"><i class="glyphicon glyphicon-leaf"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}%</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-flash"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}%</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{FatPercentageTotal.toFixed(1)}}%</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{CaloriesTotal.toFixed(1)}}</span>
                 </div>
@@ -61,10 +71,10 @@
                         </th>
                         <th class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-cog"></i>&nbsp;Protien %</th>
                         <th>
-                            <a href="" ng-click="order('Carb')"><i class="glyphicon glyphicon-leaf"></i>&nbsp;Carbohydrate</a>
+                            <a href="" ng-click="order('Carb')"><i class="glyphicon glyphicon-flash"></i>&nbsp;Carbohydrate</a>
                             <span class="sortorder" ng-show="predicate === 'Carb'" ng-class="{reverse:reverse}"></span>
                         </th>
-                        <th class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-leaf"></i>&nbsp;Carbohydrate %</th>
+                        <th class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-flash"></i>&nbsp;Carbohydrate %</th>
                         <th>
                             <a href="" ng-click="order('Fat')"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;Fat</a>
                             <span class="sortorder" ng-show="predicate === 'Fat'" ng-class="{reverse:reverse}"></span>
@@ -98,17 +108,6 @@
                 </table>
             </div>
         </div>
-    </div>
-    <div>
-        <strong>To Do</strong>
-        <ul>
-            <li>Add selected items to list</li>
-            <li>Search for product images, from BING</li>
-            <li>Set amounts to use: form for building contents</li>
-            <li>deepen metrics, with more precise numbers</li>
-            <li>more data, start collecting more product information</li>
-            <li>switch between ounce and grams</li>
-        </ul>
     </div>
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
