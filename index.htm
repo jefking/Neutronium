@@ -12,17 +12,8 @@
     <link href="Content/site.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="navbar navbar-static-top" role="navigation">
-        <div class="input-group">
-            <input ng-model="query" type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-            <div class="input-group-btn">
-                <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
-            </div>
-        </div>
-    </div>
     <div class="container-fluid">
         <div class="col-md-10 main" ng-controller="displaySelected">
-            <h1 class="page-header">Mixer</h1>
             <div class="row placeholders">
                 <div class="col-xs-6 col-sm-3 placeholder" ng-repeat="item in selected">
                     <h4>{{item.Name}}</h4>
@@ -45,7 +36,12 @@
                 </div>
             </div>
             <div ng-controller="sort">
-                <h2 class="sub-header">Contents</h2>
+                <div class="input-group">
+                    <input ng-model="query" type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
                 <table id="example" class="table table-striped table-bordered" cellspacing="0" ng-controller="nutrition">
                     <thead>
                         <th>
@@ -71,7 +67,7 @@
                             <a href="" ng-click="order('CalPerHundred')"><i class="glyphicon glyphicon-fire"></i>&nbsp;Calories</a>
                             <span class="sortorder" ng-show="predicate === 'CalPerHundred'" ng-class="{reverse:reverse}"></span>
                         </th>
-                        <th class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-inbox"></i>&nbsp;Grams</th>
+                        <th class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-inbox"></i>&nbsp;Weight</th>
                         <th class="hidden-xs hidden-sm"></th>
                     </thead>
                     <tr ng-repeat="food in foods | filter:query | orderBy:predicate:reverse">
@@ -89,7 +85,7 @@
                         <td class="text-right">{{food.Fat}}</td>
                         <td class="text-right hidden-xs hidden-sm">{{((food.Fat /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
                         <td class="text-right">{{food.CalPerHundred}}</td>
-                        <td class="text-right hidden-xs hidden-sm">100</td>
+                        <td class="text-right hidden-xs hidden-sm">100 gr</td>
                         <td class="text-center hidden-xs hidden-sm"><a href="https://en.wikipedia.org/wiki/{{food.Name}}" target="_blank" class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-link"></i></a></td>
                     </tr>
                 </table>
