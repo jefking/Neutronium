@@ -47,10 +47,7 @@
                 </div>
                 <div class="col-xs-6 col-sm-3 placeholder">
                     <h4>Total</h4>
-                    <div class="input-group">
-                        <input type="number" class="form-control" name="quantity" id="quantity" readonly value="{{GramsTotal}}" min="10" max="10000" />
-                        <span class="input-group-addon" id="sizing-addon1">Gr</span>
-                    </div>
+                    <span class="text-muted"><i class="glyphicon glyphicon-inbox"></i>&nbsp;{{GramsTotal}} gr</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-star"></i>&nbsp;{{ProtienPercentageTotal.toFixed(1)}}%</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-flash"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}%</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{FatPercentageTotal.toFixed(1)}}%</span>
@@ -81,10 +78,10 @@
                         </th>
                         <th class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;Fat %</th>
                         <th>
-                            <a href="" ng-click="order('CalPerHundred')"><i class="glyphicon glyphicon-fire"></i>Calories</a>
+                            <a href="" ng-click="order('CalPerHundred')"><i class="glyphicon glyphicon-fire"></i>&nbsp;Calories</a>
                             <span class="sortorder" ng-show="predicate === 'CalPerHundred'" ng-class="{reverse:reverse}"></span>
                         </th>
-                        <th class="hidden-xs hidden-sm">Grams</th>
+                        <th class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-inbox"></i>&nbsp;Grams</th>
                         <th class="hidden-xs hidden-sm"></th>
                     </thead>
                     <tr ng-repeat="food in foods | filter:query | orderBy:predicate:reverse">

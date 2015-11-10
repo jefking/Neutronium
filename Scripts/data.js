@@ -496,7 +496,7 @@
     },
     {
 
-        "Name": "Cantaloupe",
+        "Name": "Dried Cantaloupe",
         "Fat": 0,
         "Carb": 87.5,
         "Protien": 2,
