@@ -42,6 +42,7 @@ nutritionApp.controller('displaySelected', ['$scope', function ($scope) {
         $scope.FatPercentageTotal = 0;
         $scope.ProtienPercentageTotal = 0;
         $scope.CarbPercentageTotal = 0;
+        $scope.GramsTotal = 0;
         var totals = 0;
     
         $.each(selected, function(i) {
@@ -49,6 +50,7 @@ nutritionApp.controller('displaySelected', ['$scope', function ($scope) {
             $scope.FatPercentageTotal += selected[i].Fat;
             $scope.ProtienPercentageTotal += selected[i].Protien;
             $scope.CarbPercentageTotal += selected[i].Carb;
+            $scope.GramsTotal += 100;
         });
         
         if (totals > 0)

@@ -35,6 +35,10 @@
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
                 <h4>Totals</h4>
+                <div class="input-group">
+                    <input type="number" class="form-control" name="quantity" id="quantity" readonly value="{{GramsTotal}}" min="10" max="10000" />
+                    <span class="input-group-addon" id="sizing-addon1">Gr</span>
+                </div>
                 <span class="text-muted"><i class="glyphicon glyphicon-cog"></i>&nbsp;{{ProtienPercentageTotal.toFixed(1)}}%</span>
                 <span class="text-muted"><i class="glyphicon glyphicon-leaf"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}%</span>
                 <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{FatPercentageTotal.toFixed(1)}}%</span>
