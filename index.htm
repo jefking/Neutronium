@@ -68,26 +68,26 @@
                             <span class="sortorder" ng-show="predicate === 'CalPerHundred'" ng-class="{reverse:reverse}"></span>
                         </th>
                         <th class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-inbox"></i>&nbsp;Weight</th>
-                        <th class="hidden-xs hidden-sm"></th>
                     </thead>
-                    <tr ng-repeat="food in foods | filter:query | orderBy:predicate:reverse">
-                        <td>
-                            <div class="checkbox" ng-controller="picked">
-                                <label>
-                                    <input type="checkbox" data-ng-model="confirmed" ng-change="change()" value="">{{food.Name}}
-                                </label>
-                            </div>
-                        </td>
-                        <td class="text-right">{{food.Protien}}</td>
-                        <td class="text-right hidden-xs hidden-sm">{{((food.Protien /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
-                        <td class="text-right">{{food.Carb}}</td>
-                        <td class="text-right hidden-xs hidden-sm">{{((food.Carb /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
-                        <td class="text-right">{{food.Fat}}</td>
-                        <td class="text-right hidden-xs hidden-sm">{{((food.Fat /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
-                        <td class="text-right">{{food.CalPerHundred}}</td>
-                        <td class="text-right hidden-xs hidden-sm">100 gr</td>
-                        <td class="text-center hidden-xs hidden-sm"><a href="https://en.wikipedia.org/wiki/{{food.Name}}" target="_blank" class="hidden-xs hidden-sm"><i class="glyphicon glyphicon-link"></i></a></td>
-                    </tr>
+                    <tbody>
+                        <tr ng-repeat="food in foods | filter:query | orderBy:predicate:reverse">
+                            <td>
+                                <div class="checkbox" ng-controller="picked">
+                                    <label>
+                                        <input type="checkbox" data-ng-model="confirmed" ng-change="change()" value="">{{food.Name}}
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="text-right">{{food.Protien}}</td>
+                            <td class="text-right hidden-xs hidden-sm">{{((food.Protien /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
+                            <td class="text-right">{{food.Carb}}</td>
+                            <td class="text-right hidden-xs hidden-sm">{{((food.Carb /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
+                            <td class="text-right">{{food.Fat}}</td>
+                            <td class="text-right hidden-xs hidden-sm">{{((food.Fat /(food.Fat + food.Carb + food.Protien)) * 100).toFixed(1)}}%</td>
+                            <td class="text-right">{{food.CalPerHundred}}</td>
+                            <td class="text-right hidden-xs hidden-sm">100 gr</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
