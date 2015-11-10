@@ -47,12 +47,13 @@ nutritionApp.controller('displaySelected', ['$scope', function ($scope) {
         var totals = 0;
     
         $.each(selected, function(i) {
+            selected[i].weight = 100;
             totals += selected[i].Fat + selected[i].Protien + selected[i].Carb;
             $scope.FatPercentageTotal += selected[i].Fat;
             $scope.ProtienPercentageTotal += selected[i].Protien;
             $scope.CarbPercentageTotal += selected[i].Carb;
             $scope.CaloriesTotal += selected[i].CalPerHundred;
-            $scope.GramsTotal += 100;
+            $scope.GramsTotal += selected[i].weight;
         });
         
         if (totals > 0)
