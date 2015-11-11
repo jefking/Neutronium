@@ -41,7 +41,7 @@
     },
     {
 
-        "Name": "Pecan",
+        "Name": "Pecan nuts",
         "Fat": 72,
         "Carb": 14,
         "Protien": 9,
@@ -56,7 +56,7 @@
     },
     {
 
-        "Name": "Brazil",
+        "Name": "Brazil nuts",
         "Fat": 66,
         "Carb": 12,
         "Protien": 14,
@@ -160,7 +160,7 @@
     },
     {
 
-        "Name": "Yogurt almonds",
+        "Name": "Yogurt covered almonds",
         "Fat": 35,
         "Carb": 55,
         "Protien": 10,
@@ -184,7 +184,7 @@
     },
     {
 
-        "Name": "Flax",
+        "Name": "Flax seeds",
         "Fat": 42,
         "Carb": 29,
         "Protien": 18,
@@ -216,7 +216,7 @@
     },
     {
 
-        "Name": "Milk Chocolate Peanut",
+        "Name": "Milk Chocolate covered Peanuts",
         "Fat": 42.5,
         "Carb": 37.5,
         "Protien": 15,
@@ -232,7 +232,7 @@
     },
     {
 
-        "Name": "HobNob Chocolate",
+        "Name": "HobNob Chocolate Cookies",
         "Fat": 21.4,
         "Carb": 62,
         "Protien": 7.9,
@@ -264,7 +264,7 @@
     },
     {
 
-        "Name": "Chia",
+        "Name": "Chia seeds",
         "Fat": 31,
         "Carb": 42,
         "Protien": 17,
@@ -272,7 +272,7 @@
     },
     {
 
-        "Name": "M&M",
+        "Name": "M&M's",
         "Fat": 21.4,
         "Carb": 71.4,
         "Protien": 4.3,
@@ -287,7 +287,6 @@
         "CalPerHundred": 484
     },
     {
-
         "Name": "Bacon Jerky",
         "Fat": 32.1,
         "Carb": 3.6,
@@ -295,7 +294,6 @@
         "CalPerHundred": 480
     },
     {
-
         "Name": "Granola",
         "Fat": 20,
         "Carb": 64,
@@ -303,23 +301,20 @@
         "CalPerHundred": 471
     },
     {
-
-        "Name": "Parmesan",
+        "Name": "Parmesan Cheese",
         "Fat": 30,
         "Carb": 0,
         "Protien": 40,
         "CalPerHundred": 466.6
     },
     {
-
-        "Name": "Dipps Bars",
+        "Name": "Dipp's Bars",
         "Fat": 16.1,
         "Carb": 71,
         "Protien": 6.5,
         "CalPerHundred": 452
     },
     {
-
         "Name": "Dried Soybeans",
         "Fat": 21.5,
         "Carb": 32.6,
@@ -327,7 +322,6 @@
         "CalPerHundred": 451
     },
     {
-
         "Name": "Pumpkin Seeds",
         "Fat": 19,
         "Carb": 54,
@@ -335,7 +329,6 @@
         "CalPerHundred": 446
     },
     {
-
         "Name": "Ramen Noodles",
         "Fat": 16,
         "Carb": 63,
@@ -343,7 +336,6 @@
         "CalPerHundred": 436
     },
     {
-
         "Name": "Corn nuts",
         "Fat": 14,
         "Carb": 72,
@@ -351,7 +343,6 @@
         "CalPerHundred": 436
     },
     {
-
         "Name": "Roasted Edemame",
         "Fat": 13,
         "Carb": 34,
@@ -359,7 +350,6 @@
         "CalPerHundred": 434
     },
     {
-
         "Name": "Tsampa",
         "Fat": 2.7,
         "Carb": 86.7,
@@ -367,7 +357,6 @@
         "CalPerHundred": 433.3
     },
     {
-
         "Name": "Quaker Yogurt Granola Bar",
         "Fat": 12.9,
         "Carb": 71.4,
@@ -375,7 +364,6 @@
         "CalPerHundred": 429
     },
     {
-
         "Name": "Yogurt raisins",
         "Fat": 17.5,
         "Carb": 70,
@@ -383,7 +371,6 @@
         "CalPerHundred": 425
     },
     {
-
         "Name": "Cracker Jack",
         "Fat": 7.4,
         "Carb": 85.2,
@@ -391,7 +378,6 @@
         "CalPerHundred": 420
     },
     {
-
         "Name": "Rice Crispy Squares",
         "Fat": 8.9,
         "Carb": 80.5,
@@ -399,15 +385,13 @@
         "CalPerHundred": 409
     },
     {
-
-        "Name": "Whey",
+        "Name": "Whey powder",
         "Fat": 3.4,
         "Carb": 10.2,
         "Protien": 81.6,
         "CalPerHundred": 408
     },
     {
-
         "Name": "Milk chocolate raisins",
         "Fat": 22.5,
         "Carb": 62.5,
@@ -415,7 +399,6 @@
         "CalPerHundred": 400
     },
     {
-
         "Name": "Refried Beans",
         "Fat": 4.5,
         "Carb": 69,
@@ -423,7 +406,6 @@
         "CalPerHundred": 390
     },
     {
-
         "Name": "Rolled Oats",
         "Fat": 6.2,
         "Carb": 69,
@@ -431,7 +413,6 @@
         "CalPerHundred": 379
     },
     {
-
         "Name": "Good Hemp Protein Drink",
         "Fat": 12.6,
         "Carb": 15.4,
@@ -439,7 +420,6 @@
         "CalPerHundred": 370
     },
     {
-
         "Name": "Quinoa",
         "Fat": 6,
         "Carb": 64,
@@ -447,7 +427,6 @@
         "CalPerHundred": 368
     },
     {
-
         "Name": "Chick peas",
         "Fat": 6,
         "Carb": 61,
@@ -455,7 +434,6 @@
         "CalPerHundred": 364
     },
     {
-
         "Name": "Dried mango",
         "Fat": 0,
         "Carb": 90.9,
@@ -463,7 +441,6 @@
         "CalPerHundred": 363.6
     },
     {
-
         "Name": "Split Red Lentils",
         "Fat": 1.5,
         "Carb": 60,
@@ -471,7 +448,6 @@
         "CalPerHundred": 360
     },
     {
-
         "Name": "Barley",
         "Fat": 2.3,
         "Carb": 73,
@@ -550,7 +526,6 @@
         "CalPerHundred": 333.3
     },
     {
-
         "Name": "Beef Jerky",
         "Fat": 25,
         "Carb": 10,
@@ -621,7 +596,7 @@
         "CalPerHundred": 240
     },
     {
-        "Name": "Peaches",
+        "Name": "Dried Peaches",
         "Fat": 0.6,
         "Carb": 61.3,
         "Protien": 3.8,
