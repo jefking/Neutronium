@@ -486,7 +486,7 @@
         "CalPerHundred": 354
     },
     {
-        "Name": "Cherry's",
+        "Name": "Dried Cherry's",
         "Fat": 0,
         "Carb": 82.5,
         "Protien": 2.5,
@@ -500,7 +500,7 @@
         "CalPerHundred": 350
     },
     {
-        "Name": "Papaya",
+        "Name": "Dried Papaya",
         "Fat": 0,
         "Carb": 87.5,
         "Protien": 0,
@@ -521,7 +521,6 @@
         "CalPerHundred": 346
     },
     {
-
         "Name": "Muesli",
         "Fat": 4.7,
         "Carb": 77.6,
@@ -530,23 +529,21 @@
     },
     {
 
-        "Name": "Romano",
+        "Name": "Romano Cheese",
         "Fat": 26.6,
         "Carb": 0,
         "Protien": 33.3,
         "CalPerHundred": 333.3
     },
     {
-
-        "Name": "Cheddar",
+        "Name": "Cheddar Cheese",
         "Fat": 26.6,
         "Carb": 0,
         "Protien": 20,
         "CalPerHundred": 333.3
     },
     {
-
-        "Name": "Pineapple",
+        "Name": "Dried Pineapple",
         "Fat": 0,
         "Carb": 85.7,
         "Protien": 2.4,
@@ -568,7 +565,7 @@
         "CalPerHundred": 325
     },
     {
-        "Name": "Goji berries",
+        "Name": "Dried Goji berries",
         "Fat": 0,
         "Carb": 85.7,
         "Protien": 14.3,
@@ -589,7 +586,7 @@
         "CalPerHundred": 299
     },
     {
-        "Name": "Currants",
+        "Name": "Dried Currants",
         "Fat": 0,
         "Carb": 74.3,
         "Protien": 4.2,
@@ -610,7 +607,7 @@
         "CalPerHundred": 243
     },
     {
-        "Name": "Dries Appricot",
+        "Name": "Dried Appricot",
         "Fat": 0.5,
         "Carb": 63,
         "Protien": 3.4,
