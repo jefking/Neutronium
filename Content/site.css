@@ -81,3 +81,9 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+.nutritionTable {  
+    height: 740px !important;
+    overflow: scroll;
+    overflow-x: hidden;
+}​
