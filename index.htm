@@ -35,13 +35,13 @@
                     <span class="text-muted"><i class="glyphicon glyphicon-inbox"></i>&nbsp;{{GramsTotal}} gr</span>
                 </div>
             </div>
-            <div ng-controller="sort">
-                <div class="input-group">
-                    <input ng-model="query" type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                    <div class="input-group-btn">
-                        <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
-                    </div>
+            <div class="input-group">
+                <input ng-model="query" type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                <div class="input-group-btn">
+                    <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
                 </div>
+            </div>
+            <div ng-controller="sort">
                 <div class="nutritionTable">
                     <table id="nutritionData" class="table table-striped table-bordered" cellspacing="0">
                         <thead>
@@ -76,7 +76,7 @@
                                 <span class="sortorder" ng-show="predicate === 'weight'" ng-class="{reverse:reverse}"></span></th>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="food in foods | filter: query | orderBy:predicate:reverse">
+                            <tr ng-repeat="food in foods | filter: {Name: query, selected: false } | orderBy:predicate:reverse">
                                 <td>
                                     <div class="checkbox">
                                         <label>
