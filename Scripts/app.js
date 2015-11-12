@@ -10,14 +10,14 @@ nutritionApp.controller('nutrition', ['$scope', '$http', function ($scope, $http
 }]);
 
 nutritionApp.controller('picked', ['$scope', function ($scope) {
-    $scope.change = function() {
-        if ($scope.confirmed){
-            selected.push($scope.food);
+    $scope.change = function(food) {
+        if (food.selected){
+            selected.push(food);
         }
         else {
             var i = 0;
             angular.forEach(selected, function (s) {
-                if (s.Name === $scope.food.Name) {
+                if (s.Name === food.Name) {
                     selected.splice(i,1);
                     return false;
                 }
