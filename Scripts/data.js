@@ -2,6 +2,14 @@
     {
 
         "Name": "Olive Oil",
+        "Fat": 93.33333333333334,
+        "Carb": 0,
+        "Protein": 0,
+        "Calories": 800
+    },
+    {
+
+        "Name": "Extra Virgin Olive Oil",
         "Fat": 100,
         "Carb": 0,
         "Protein": 0,
