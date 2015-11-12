@@ -8,9 +8,9 @@ nutritionApp.controller('nutrition', ['$scope', '$http', function ($scope, $http
         angular.forEach($scope.foods, function (food) {
             food.weight = 100;
             food.selected = false;
-            food.protienPercent = ((food.Protien / (food.Fat + food.Carb + food.Protien)) * 100);
-            food.fatPercent = ((food.Fat / (food.Fat + food.Carb + food.Protien)) * 100);
-            food.carbPercent = ((food.Carb / (food.Fat + food.Carb + food.Protien)) * 100);
+            food.proteinPercent = ((food.Protein / (food.Fat + food.Carb + food.Protein)) * 100);
+            food.fatPercent = ((food.Fat / (food.Fat + food.Carb + food.Protein)) * 100);
+            food.carbPercent = ((food.Carb / (food.Fat + food.Carb + food.Protein)) * 100);
         });
     });
 }]);
@@ -24,30 +24,30 @@ nutritionApp.controller('sort', ['$scope', function ($scope) {
     }
 }]);
 
-nutritionApp.controller('displaySelected', ['$scope', function ($scope) {
+nutritionApp.controller('totals', ['$scope', function ($scope) {
 
     $scope.$watchCollection("foods", function (newValue, oldValue) {
         $scope.FatPercentageTotal = 0;
-        $scope.ProtienPercentageTotal = 0;
+        $scope.ProteinPercentageTotal = 0;
         $scope.CarbPercentageTotal = 0;
         $scope.GramsTotal = 0;
         $scope.CaloriesTotal = 0;
         var totals = 0;
 
-        angular.forEach($scope.foods, function (s) {
-            if (s.selected) {
-                totals += s.Fat + s.Protien + s.Carb;
-                $scope.FatPercentageTotal += s.Fat;
-                $scope.ProtienPercentageTotal += s.Protien;
-                $scope.CarbPercentageTotal += s.Carb;
-                $scope.CaloriesTotal += s.CalPerHundred;
-                $scope.GramsTotal += s.weight;
+        angular.forEach($scope.foods, function (food) {
+            if (food.selected) {
+                totals += food.Fat + food.Protein + food.Carb;
+                $scope.FatPercentageTotal += food.Fat;
+                $scope.ProteinPercentageTotal += food.Protein;
+                $scope.CarbPercentageTotal += food.Carb;
+                $scope.CaloriesTotal += food.CalPerHundred;
+                $scope.GramsTotal += food.weight;
             }
         });
 
         if (totals > 0) {
             $scope.FatPercentageTotal = $scope.FatPercentageTotal / totals * 100;
-            $scope.ProtienPercentageTotal = $scope.ProtienPercentageTotal / totals * 100;
+            $scope.ProteinPercentageTotal = $scope.ProteinPercentageTotal / totals * 100;
             $scope.CarbPercentageTotal = $scope.CarbPercentageTotal / totals * 100;
         }
     });

@@ -21,14 +21,14 @@
                         <input type="number" class="form-control" name="quantity" id="quantity" value="{{food.weight}}" min="10" max="10000" step="10" />
                         <span class="input-group-addon" id="sizing-addon1">Gr</span>
                     </div>
-                    <span class="text-muted"><i class="glyphicon glyphicon-star"></i>&nbsp;{{food.Protien}}</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-star"></i>&nbsp;{{food.Protein}}</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-flash"></i>&nbsp;{{food.Carb}}</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{food.Fat}}</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{food.CalPerHundred}}</span>
                 </div>
-                <div class="col-xs-6 col-sm-3 placeholder">
+                <div class="col-xs-6 col-sm-3 placeholder" ng-controller="totals">
                     <h4>Total</h4>
-                    <span class="text-muted"><i class="glyphicon glyphicon-star"></i>&nbsp;{{ProtienPercentageTotal.toFixed(1)}}%</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-star"></i>&nbsp;{{ProteinPercentageTotal.toFixed(1)}}%</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-flash"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}%</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{FatPercentageTotal.toFixed(1)}}%</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{CaloriesTotal.toFixed(1)}}</span>
@@ -50,11 +50,11 @@
                                 <span class="sortorder" ng-show="predicate === 'Name'" ng-class="{reverse:reverse}"></span>
                             </th>
                             <th>
-                                <a href="" ng-click="order('Protien')"><i class="glyphicon glyphicon-star"></i>&nbsp;Protien</a>
-                                <span class="sortorder" ng-show="predicate === 'Protien'" ng-class="{reverse:reverse}"></span>
+                                <a href="" ng-click="order('Protein')"><i class="glyphicon glyphicon-star"></i>&nbsp;Protein</a>
+                                <span class="sortorder" ng-show="predicate === 'Protein'" ng-class="{reverse:reverse}"></span>
                             </th>
-                            <th class="hidden-xs hidden-sm"><a href="" ng-click="order('protienPercent')"><i class="glyphicon glyphicon-star"></i>&nbsp;Protien %</a>
-                                <span class="sortorder" ng-show="predicate === 'protienPercent'" ng-class="{reverse:reverse}"></span></th>
+                            <th class="hidden-xs hidden-sm"><a href="" ng-click="order('proteinPercent')"><i class="glyphicon glyphicon-star"></i>&nbsp;Protein %</a>
+                                <span class="sortorder" ng-show="predicate === 'proteinPercent'" ng-class="{reverse:reverse}"></span></th>
                             <th>
                                 <a href="" ng-click="order('Carb')"><i class="glyphicon glyphicon-flash"></i>&nbsp;Carbohydrate</a>
                                 <span class="sortorder" ng-show="predicate === 'Carb'" ng-class="{reverse:reverse}"></span>
@@ -76,7 +76,7 @@
                                 <span class="sortorder" ng-show="predicate === 'weight'" ng-class="{reverse:reverse}"></span></th>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="food in foods | filter:query | orderBy:predicate:reverse">
+                            <tr ng-repeat="food in foods | filter: query | orderBy:predicate:reverse">
                                 <td>
                                     <div class="checkbox">
                                         <label>
@@ -84,8 +84,8 @@
                                         </label>
                                     </div>
                                 </td>
-                                <td class="text-right">{{food.Protien}}</td>
-                                <td class="text-right hidden-xs hidden-sm">{{food.protienPercent.toFixed(1)}}%</td>
+                                <td class="text-right">{{food.Protein}}</td>
+                                <td class="text-right hidden-xs hidden-sm">{{food.proteinPercent.toFixed(1)}}%</td>
                                 <td class="text-right">{{food.Carb}}</td>
                                 <td class="text-right hidden-xs hidden-sm">{{food.fatPercent.toFixed(1)}}%</td>
                                 <td class="text-right">{{food.Fat}}</td>
