@@ -66,8 +66,8 @@ nutritionApp.controller('displaySelected', ['$scope', function ($scope) {
     });
     
     
-    $scope.ClearClick = function() {
-        angular.forEach($scope.foods, function (food) {
+    $scope.ClearClick = function(selected) {
+        angular.forEach(selected, function (food) {
             food.selected = false;
         });
 
