@@ -33,9 +33,7 @@
                     <span class="text-muted"><i class="glyphicon glyphicon-flash"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}%</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{FatPercentageTotal.toFixed(1)}}%</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{CaloriesTotal.toFixed(1)}}</span>
-                </div>
-                <div class="">
-                    <input type="button" value="Clear" ng-click="ClearClick()" />
+                    <button type="button" class="btn btn-warning" ng-click="ClearClick()">Clear All</button>
                 </div>
             </div>
             <div ng-controller="sort">
@@ -95,6 +93,11 @@
             </div>
         </div>
     </div>
+    <hr />
+    <blockquote class="blockquote-reverse">
+        <p>It is health that is real wealth and not pieces of gold and silver.</p>
+        <footer>Mahatma Gandhi</footer>
+    </blockquote>
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/app.js"></script>
 </body>
