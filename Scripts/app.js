@@ -5,6 +5,7 @@ var nutritionApp = angular.module('nutritionApp', []);
 nutritionApp.controller('nutrition', ['$scope', '$http', function ($scope, $http) {
     $http.get('Scripts/data.js').success(function (data) {
         $scope.foods = data;
+        
         angular.forEach($scope.foods, function (food) {
             food.weight = 100;
             food.selected = false;
@@ -26,6 +27,15 @@ nutritionApp.controller('sort', ['$scope', function ($scope) {
 
 nutritionApp.controller('totals', ['$scope', function ($scope) {
 
+    $scope.total = 
+    {
+        ProteinPercentageTotal: 0,
+        CarbPercentageTotal: 0,
+        FatPercentageTotal: 0,
+        CaloriesTotal: 0,
+        GramsTotal: 0,
+    };
+    
     $scope.$watchCollection("foods", function (newValue, oldValue) {
         $scope.FatPercentageTotal = 0;
         $scope.ProteinPercentageTotal = 0;

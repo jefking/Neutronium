@@ -5,7 +5,7 @@
         "Fat": 100,
         "Carb": 0,
         "Protein": 0,
-        "CalPerHundred": 884
+        "Calories": 884
     },
     {
 
@@ -13,7 +13,7 @@
         "Fat": 75.8,
         "Carb": 13.8,
         "Protein": 7.9,
-        "CalPerHundred": 740
+        "Calories": 740
     },
     {
 
@@ -21,7 +21,7 @@
         "Fat": 82.1,
         "Carb": 0,
         "Protein": 0,
-        "CalPerHundred": 726
+        "Calories": 726
     },
     {
 
@@ -29,7 +29,7 @@
         "Fat": 79,
         "Carb": 4.2,
         "Protein": 10.8,
-        "CalPerHundred": 719.2
+        "Calories": 719.2
     },
     {
 
@@ -37,7 +37,7 @@
         "Fat": 32,
         "Carb": 42.9,
         "Protein": 21.4,
-        "CalPerHundred": 714
+        "Calories": 714
     },
     {
 
@@ -45,14 +45,14 @@
         "Fat": 72,
         "Carb": 14,
         "Protein": 9,
-        "CalPerHundred": 690
+        "Calories": 690
     },
     {
         "Name": "Pine Nuts",
         "Fat": 68,
         "Carb": 13,
         "Protein": 14,
-        "CalPerHundred": 673
+        "Calories": 673
     },
     {
 
@@ -60,7 +60,7 @@
         "Fat": 66,
         "Carb": 12,
         "Protein": 14,
-        "CalPerHundred": 656
+        "Calories": 656
     },
     {
 
@@ -68,7 +68,7 @@
         "Fat": 65,
         "Carb": 14,
         "Protein": 15,
-        "CalPerHundred": 654
+        "Calories": 654
     },
     {
 
@@ -76,7 +76,7 @@
         "Fat": 61,
         "Carb": 17,
         "Protein": 15,
-        "CalPerHundred": 628
+        "Calories": 628
     },
     {
 
@@ -84,7 +84,7 @@
         "Fat": 46.9,
         "Carb": 25,
         "Protein": 21.9,
-        "CalPerHundred": 625
+        "Calories": 625
     },
     {
 
@@ -92,7 +92,7 @@
         "Fat": 50,
         "Carb": 20,
         "Protein": 25,
-        "CalPerHundred": 600
+        "Calories": 600
     },
     {
 
@@ -100,7 +100,7 @@
         "Fat": 47,
         "Carb": 44,
         "Protein": 5,
-        "CalPerHundred": 592
+        "Calories": 592
     },
     {
 
@@ -108,7 +108,7 @@
         "Fat": 51,
         "Carb": 20,
         "Protein": 21,
-        "CalPerHundred": 584
+        "Calories": 584
     },
     {
 
@@ -116,7 +116,7 @@
         "Fat": 46.7,
         "Carb": 6.7,
         "Protein": 36.7,
-        "CalPerHundred": 580
+        "Calories": 580
     },
     {
 
@@ -124,7 +124,7 @@
         "Fat": 49,
         "Carb": 22,
         "Protein": 21,
-        "CalPerHundred": 576
+        "Calories": 576
     },
     {
 
@@ -132,7 +132,7 @@
         "Fat": 50,
         "Carb": 23,
         "Protein": 18,
-        "CalPerHundred": 573
+        "Calories": 573
     },
     {
 
@@ -140,7 +140,7 @@
         "Fat": 49,
         "Carb": 16,
         "Protein": 26,
-        "CalPerHundred": 567
+        "Calories": 567
     },
     {
 
@@ -148,7 +148,7 @@
         "Fat": 45,
         "Carb": 29,
         "Protein": 21,
-        "CalPerHundred": 567
+        "Calories": 567
     },
     {
 
@@ -156,7 +156,7 @@
         "Fat": 44,
         "Carb": 30,
         "Protein": 18,
-        "CalPerHundred": 553
+        "Calories": 553
     },
     {
 
@@ -164,7 +164,7 @@
         "Fat": 35,
         "Carb": 55,
         "Protein": 10,
-        "CalPerHundred": 550
+        "Calories": 550
     },
     {
 
@@ -172,7 +172,7 @@
         "Fat": 31,
         "Carb": 61,
         "Protein": 4.9,
-        "CalPerHundred": 546
+        "Calories": 546
     },
     {
 
@@ -180,7 +180,7 @@
         "Fat": 32.4,
         "Carb": 59.4,
         "Protein": 5.9,
-        "CalPerHundred": 538
+        "Calories": 538
     },
     {
 
@@ -188,7 +188,7 @@
         "Fat": 42,
         "Carb": 29,
         "Protein": 18,
-        "CalPerHundred": 534
+        "Calories": 534
     },
     {
 
@@ -196,7 +196,7 @@
         "Fat": 23.6,
         "Carb": 23.5,
         "Protein": 5.9,
-        "CalPerHundred": 529
+        "Calories": 529
     },
     {
 
@@ -204,7 +204,7 @@
         "Fat": 32.4,
         "Carb": 56.8,
         "Protein": 5.4,
-        "CalPerHundred": 526
+        "Calories": 526
     },
     {
 
@@ -212,7 +212,7 @@
         "Fat": 42,
         "Carb": 28,
         "Protein": 18,
-        "CalPerHundred": 525
+        "Calories": 525
     },
     {
 
@@ -220,7 +220,7 @@
         "Fat": 42.5,
         "Carb": 37.5,
         "Protein": 15,
-        "CalPerHundred": 525
+        "Calories": 525
     },
     {
 
@@ -228,7 +228,7 @@
         "Fat": 34,
         "Carb": 58,
         "Protein": 2.3,
-        "CalPerHundred": 519
+        "Calories": 519
     },
     {
 
@@ -236,7 +236,7 @@
         "Fat": 21.4,
         "Carb": 62,
         "Protein": 7.9,
-        "CalPerHundred": 500
+        "Calories": 500
     },
     {
 
@@ -244,7 +244,7 @@
         "Fat": 24,
         "Carb": 64,
         "Protein": 6,
-        "CalPerHundred": 500
+        "Calories": 500
     },
     {
 
@@ -252,7 +252,7 @@
         "Fat": 26,
         "Carb": 32,
         "Protein": 34,
-        "CalPerHundred": 500
+        "Calories": 500
     },
     {
 
@@ -260,7 +260,7 @@
         "Fat": 27,
         "Carb": 38,
         "Protein": 26,
-        "CalPerHundred": 496
+        "Calories": 496
     },
     {
 
@@ -268,7 +268,7 @@
         "Fat": 31,
         "Carb": 42,
         "Protein": 17,
-        "CalPerHundred": 486
+        "Calories": 486
     },
     {
 
@@ -276,7 +276,7 @@
         "Fat": 21.4,
         "Carb": 71.4,
         "Protein": 4.3,
-        "CalPerHundred": 485.7
+        "Calories": 485.7
     },
     {
 
@@ -284,224 +284,224 @@
         "Fat": 23.3,
         "Carb": 66.7,
         "Protein": 6.7,
-        "CalPerHundred": 484
+        "Calories": 484
     },
     {
         "Name": "Bacon Jerky",
         "Fat": 32.1,
         "Carb": 3.6,
         "Protein": 42.9,
-        "CalPerHundred": 480
+        "Calories": 480
     },
     {
         "Name": "Granola",
         "Fat": 20,
         "Carb": 64,
         "Protein": 10,
-        "CalPerHundred": 471
+        "Calories": 471
     },
     {
         "Name": "Parmesan Cheese",
         "Fat": 30,
         "Carb": 0,
         "Protein": 40,
-        "CalPerHundred": 466.6
+        "Calories": 466.6
     },
     {
         "Name": "Dipp's Bars",
         "Fat": 16.1,
         "Carb": 71,
         "Protein": 6.5,
-        "CalPerHundred": 452
+        "Calories": 452
     },
     {
         "Name": "Dried Soybeans",
         "Fat": 21.5,
         "Carb": 32.6,
         "Protein": 39.5,
-        "CalPerHundred": 451
+        "Calories": 451
     },
     {
         "Name": "Pumpkin Seeds",
         "Fat": 19,
         "Carb": 54,
         "Protein": 19,
-        "CalPerHundred": 446
+        "Calories": 446
     },
     {
         "Name": "Ramen Noodles",
         "Fat": 16,
         "Carb": 63,
         "Protein": 10,
-        "CalPerHundred": 436
+        "Calories": 436
     },
     {
         "Name": "Corn nuts",
         "Fat": 14,
         "Carb": 72,
         "Protein": 9,
-        "CalPerHundred": 436
+        "Calories": 436
     },
     {
         "Name": "Roasted Edemame",
         "Fat": 13,
         "Carb": 34,
         "Protein": 47.8,
-        "CalPerHundred": 434
+        "Calories": 434
     },
     {
         "Name": "Tsampa",
         "Fat": 2.7,
         "Carb": 86.7,
         "Protein": 11,
-        "CalPerHundred": 433.3
+        "Calories": 433.3
     },
     {
         "Name": "Quaker Yogurt Granola Bar",
         "Fat": 12.9,
         "Carb": 71.4,
         "Protein": 5.7,
-        "CalPerHundred": 429
+        "Calories": 429
     },
     {
         "Name": "Yogurt raisins",
         "Fat": 17.5,
         "Carb": 70,
         "Protein": 2.5,
-        "CalPerHundred": 425
+        "Calories": 425
     },
     {
         "Name": "Cracker Jack",
         "Fat": 7.4,
         "Carb": 85.2,
         "Protein": 7.4,
-        "CalPerHundred": 420
+        "Calories": 420
     },
     {
         "Name": "Rice Crispy Squares",
         "Fat": 8.9,
         "Carb": 80.5,
         "Protein": 3.5,
-        "CalPerHundred": 409
+        "Calories": 409
     },
     {
         "Name": "Whey powder",
         "Fat": 3.4,
         "Carb": 10.2,
         "Protein": 81.6,
-        "CalPerHundred": 408
+        "Calories": 408
     },
     {
         "Name": "Milk chocolate raisins",
         "Fat": 22.5,
         "Carb": 62.5,
         "Protein": 5,
-        "CalPerHundred": 400
+        "Calories": 400
     },
     {
         "Name": "Refried Beans",
         "Fat": 4.5,
         "Carb": 69,
         "Protein": 21,
-        "CalPerHundred": 390
+        "Calories": 390
     },
     {
         "Name": "Rolled Oats",
         "Fat": 6.2,
         "Carb": 69,
         "Protein": 13.6,
-        "CalPerHundred": 379
+        "Calories": 379
     },
     {
         "Name": "Good Hemp Protein Drink",
         "Fat": 12.6,
         "Carb": 15.4,
         "Protein": 47,
-        "CalPerHundred": 370
+        "Calories": 370
     },
     {
         "Name": "Quinoa",
         "Fat": 6,
         "Carb": 64,
         "Protein": 14,
-        "CalPerHundred": 368
+        "Calories": 368
     },
     {
         "Name": "Chick peas",
         "Fat": 6,
         "Carb": 61,
         "Protein": 19,
-        "CalPerHundred": 364
+        "Calories": 364
     },
     {
         "Name": "Dried mango",
         "Fat": 0,
         "Carb": 90.9,
         "Protein": 0,
-        "CalPerHundred": 363.6
+        "Calories": 363.6
     },
     {
         "Name": "Split Red Lentils",
         "Fat": 1.5,
         "Carb": 60,
         "Protein": 28,
-        "CalPerHundred": 360
+        "Calories": 360
     },
     {
         "Name": "Barley",
         "Fat": 2.3,
         "Carb": 73,
         "Protein": 12,
-        "CalPerHundred": 354
+        "Calories": 354
     },
     {
         "Name": "Fig Newton",
         "Fat": 6.5,
         "Carb": 71,
         "Protein": 3.2,
-        "CalPerHundred": 354
+        "Calories": 354
     },
     {
         "Name": "Dried Cherry's",
         "Fat": 0,
         "Carb": 82.5,
         "Protein": 2.5,
-        "CalPerHundred": 350
+        "Calories": 350
     },
     {
         "Name": "Dried Cantaloupe",
         "Fat": 0,
         "Carb": 87.5,
         "Protein": 2,
-        "CalPerHundred": 350
+        "Calories": 350
     },
     {
         "Name": "Dried Papaya",
         "Fat": 0,
         "Carb": 87.5,
         "Protein": 0,
-        "CalPerHundred": 350
+        "Calories": 350
     },
     {
         "Name": "Mung beans",
         "Fat": 1.2,
         "Carb": 63,
         "Protein": 24,
-        "CalPerHundred": 347
+        "Calories": 347
     },
     {
         "Name": "Buckwheat Groats",
         "Fat": 2.7,
         "Carb": 75,
         "Protein": 12,
-        "CalPerHundred": 346
+        "Calories": 346
     },
     {
         "Name": "Muesli",
         "Fat": 4.7,
         "Carb": 77.6,
         "Protein": 1.4,
-        "CalPerHundred": 340
+        "Calories": 340
     },
     {
 
@@ -509,118 +509,118 @@
         "Fat": 26.6,
         "Carb": 0,
         "Protein": 33.3,
-        "CalPerHundred": 333.3
+        "Calories": 333.3
     },
     {
         "Name": "Cheddar Cheese",
         "Fat": 26.6,
         "Carb": 0,
         "Protein": 20,
-        "CalPerHundred": 333.3
+        "Calories": 333.3
     },
     {
         "Name": "Dried Pineapple",
         "Fat": 0,
         "Carb": 85.7,
         "Protein": 2.4,
-        "CalPerHundred": 333.3
+        "Calories": 333.3
     },
     {
         "Name": "Beef Jerky",
         "Fat": 25,
         "Carb": 10,
         "Protein": 35,
-        "CalPerHundred": 333
+        "Calories": 333
     },
     {
         "Name": "Dried Blueberry",
         "Fat": 2.5,
         "Carb": 80,
         "Protein": 2.5,
-        "CalPerHundred": 325
+        "Calories": 325
     },
     {
         "Name": "Dried Goji berries",
         "Fat": 0,
         "Carb": 85.7,
         "Protein": 14.3,
-        "CalPerHundred": 321.4
+        "Calories": 321.4
     },
     {
         "Name": "Dried Cranberry",
         "Fat": 1.4,
         "Carb": 82,
         "Protein": 0.1,
-        "CalPerHundred": 308
+        "Calories": 308
     },
     {
         "Name": "Raisin",
         "Fat": 0.5,
         "Carb": 79,
         "Protein": 3.1,
-        "CalPerHundred": 299
+        "Calories": 299
     },
     {
         "Name": "Dried Currants",
         "Fat": 0,
         "Carb": 74.3,
         "Protein": 4.2,
-        "CalPerHundred": 283
+        "Calories": 283
     },
     {
         "Name": "Dried Date",
         "Fat": 0.15,
         "Carb": 75,
         "Protein": 1.8,
-        "CalPerHundred": 277
+        "Calories": 277
     },
     {
         "Name": "Dried Apples",
         "Fat": 0,
         "Carb": 66.3,
         "Protein": 1.2,
-        "CalPerHundred": 243
+        "Calories": 243
     },
     {
         "Name": "Dried Appricot",
         "Fat": 0.5,
         "Carb": 63,
         "Protein": 3.4,
-        "CalPerHundred": 241
+        "Calories": 241
     },
     {
         "Name": "Dried Prune",
         "Fat": 0.4,
         "Carb": 64,
         "Protein": 2.2,
-        "CalPerHundred": 240
+        "Calories": 240
     },
     {
         "Name": "Dried Peaches",
         "Fat": 0.6,
         "Carb": 61.3,
         "Protein": 3.8,
-        "CalPerHundred": 238.8
+        "Calories": 238.8
     },
     {
         "Name": "Marmite",
         "Fat": 0.1,
         "Carb": 19.2,
         "Protein": 28.4,
-        "CalPerHundred": 231
+        "Calories": 231
     },
     {
         "Name": "Lima beans",
         "Fat": 0.4,
         "Carb": 21,
         "Protein": 8,
-        "CalPerHundred": 115
+        "Calories": 115
     },
     {
         "Name": "Vegemite",
         "Fat": 0,
         "Carb": 10,
         "Protein": 12.2,
-        "CalPerHundred": 100
+        "Calories": 100
     }
 ]

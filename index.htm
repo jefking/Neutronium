@@ -12,19 +12,19 @@
     <link href="Content/site.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="container-fluid" ng-controller="nutrition">
-        <div class="col-md-10 main">
+    <div class="container-fluid">
+        <div class="col-md-10 main" ng-controller="nutrition">
             <div class="row placeholders">
                 <div class="col-xs-6 col-sm-3 placeholder" ng-repeat="food in foods | filter: {selected: true}">
                     <h4>{{food.Name}} <a href="" ng-model="food.selected" ng-click="food.selected = false;"><i class="glyphicon glyphicon-remove"></i></a></h4>
                     <div class="input-group">
-                        <input type="number" class="form-control" name="quantity" id="quantity" ng-model="food.weight" value="{{food.weight}}" min="10" max="10000" step="10" />
+                        <input type="number" class="form-control" name="quantity" id="quantity" ng-model="food.weight" value="{{food.weight}}" min="100" max="10000" step="100" />
                         <span class="input-group-addon" id="sizing-addon1">Gr</span>
                     </div>
-                    <span class="text-muted"><i class="glyphicon glyphicon-star"></i>&nbsp;{{food.Protein}}</span>
-                    <span class="text-muted"><i class="glyphicon glyphicon-flash"></i>&nbsp;{{food.Carb}}</span>
-                    <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{food.Fat}}</span>
-                    <span class="text-muted"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{food.CalPerHundred}}</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-star"></i>&nbsp;{{(food.Protein * (food.weight * .01)).toFixed(1)}}</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-flash"></i>&nbsp;{{(food.Carb * (food.weight * .01)).toFixed(1)}}</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{(food.Fat * (food.weight * .01)).toFixed(1)}}</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{(food.Calories * (food.weight * .01)).toFixed(1)}}</span>
                 </div>
                 <div class="col-xs-6 col-sm-3 placeholder" ng-controller="totals">
                     <h4>Total</h4>
@@ -68,8 +68,8 @@
                             <th class="hidden-xs hidden-sm"><a href="" ng-click="order('fatPercent')"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;Fat %</a>
                                 <span class="sortorder" ng-show="predicate === 'fatPercent'" ng-class="{reverse:reverse}"></span></th>
                             <th>
-                                <a href="" ng-click="order('CalPerHundred')"><i class="glyphicon glyphicon-fire"></i>&nbsp;Calories</a>
-                                <span class="sortorder" ng-show="predicate === 'CalPerHundred'" ng-class="{reverse:reverse}"></span>
+                                <a href="" ng-click="order('Calories')"><i class="glyphicon glyphicon-fire"></i>&nbsp;Calories</a>
+                                <span class="sortorder" ng-show="predicate === 'Calories'" ng-class="{reverse:reverse}"></span>
                             </th>
                             <th class="hidden-xs hidden-sm">
                                 <a href="" ng-click="order('weight')"><i class="glyphicon glyphicon-inbox"></i>&nbsp;Weight</a>
@@ -90,7 +90,7 @@
                                 <td class="text-right hidden-xs hidden-sm">{{food.fatPercent.toFixed(1)}}%</td>
                                 <td class="text-right">{{food.Fat}}</td>
                                 <td class="text-right hidden-xs hidden-sm">{{food.carbPercent.toFixed(1)}}%</td>
-                                <td class="text-right">{{food.CalPerHundred}}</td>
+                                <td class="text-right">{{food.Calories}}</td>
                                 <td class="text-right hidden-xs hidden-sm">100 gr</td>
                             </tr>
                         </tbody>
