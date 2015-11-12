@@ -25,40 +25,17 @@ nutritionApp.controller('sort', ['$scope', function ($scope) {
     }
 }]);
 
-nutritionApp.controller('totals', ['$scope', function ($scope) {
-
-    $scope.total = 
-    {
-        ProteinPercentageTotal: 0,
-        CarbPercentageTotal: 0,
-        FatPercentageTotal: 0,
-        CaloriesTotal: 0,
-        GramsTotal: 0,
-    };
-    
-    $scope.$watchCollection("foods", function (newValue, oldValue) {
-        $scope.FatPercentageTotal = 0;
-        $scope.ProteinPercentageTotal = 0;
-        $scope.CarbPercentageTotal = 0;
-        $scope.GramsTotal = 0;
-        $scope.CaloriesTotal = 0;
-        var totals = 0;
-
-        angular.forEach($scope.foods, function (food) {
-            if (food.selected) {
-                totals += food.Fat + food.Protein + food.Carb;
-                $scope.FatPercentageTotal += food.Fat;
-                $scope.ProteinPercentageTotal += food.Protein;
-                $scope.CarbPercentageTotal += food.Carb;
-                $scope.CaloriesTotal += food.CalPerHundred;
-                $scope.GramsTotal += food.weight;
-            }
-        });
-
-        if (totals > 0) {
-            $scope.FatPercentageTotal = $scope.FatPercentageTotal / totals * 100;
-            $scope.ProteinPercentageTotal = $scope.ProteinPercentageTotal / totals * 100;
-            $scope.CarbPercentageTotal = $scope.CarbPercentageTotal / totals * 100;
+nutritionApp.filter('sumByKey', function() {
+    return function(data, key) {
+        if (typeof(data) === 'undefined' || typeof(key) === 'undefined') {
+            return 0;
         }
-    });
-}]);
+
+        var sum = 0;
+        for (var i = data.length - 1; i >= 0; i--) {
+            sum += parseInt(data[i][key]);
+        }
+
+        return sum;
+    };
+});

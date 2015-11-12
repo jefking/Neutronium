@@ -26,13 +26,13 @@
                     <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{(food.Fat * (food.weight * .01)).toFixed(1)}}</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{(food.Calories * (food.weight * .01)).toFixed(1)}}</span>
                 </div>
-                <div class="col-xs-6 col-sm-3 placeholder" ng-controller="totals">
+                <div class="col-xs-6 col-sm-3 placeholder">
                     <h4>Total</h4>
                     <span class="text-muted"><i class="glyphicon glyphicon-star"></i>&nbsp;{{ProteinPercentageTotal.toFixed(1)}}%</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-flash"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}%</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{FatPercentageTotal.toFixed(1)}}%</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{CaloriesTotal.toFixed(1)}}</span>
-                    <span class="text-muted"><i class="glyphicon glyphicon-inbox"></i>&nbsp;{{GramsTotal}} gr</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-inbox"></i>&nbsp;{{foods | filter: {selected: true} | sumByKey:'weight'}}</span>
                 </div>
             </div>
             <div class="input-group">
