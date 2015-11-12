@@ -31,7 +31,6 @@ body {
 /*
  * Global add-ons
  */
-
 .sub-header {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
@@ -48,7 +47,6 @@ body {
 /*
  * Main content
  */
-
 .main {
   padding: 20px;
 }
@@ -66,7 +64,6 @@ body {
 /*
  * Placeholder dashboard ideas
  */
-
 .placeholders {
   margin-bottom: 30px;
   text-align: center;
@@ -82,6 +79,9 @@ body {
   border-radius: 50%;
 }
 
+/*
+ * Content Table
+ */
 .nutritionTable {  
     height: 640px !important;
     overflow: scroll;
