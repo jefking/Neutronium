@@ -88,7 +88,7 @@
     },
     {
 
-        "Name": "WowButter",
+        "Name": "WowButter (Soy)",
         "Fat": 46.9,
         "Carb": 25,
         "Protein": 21.9,
@@ -630,5 +630,82 @@
         "Carb": 10,
         "Protein": 12.2,
         "Calories": 100
+    },
+    {
+        "Name": "Maize/Corn",
+        "Fat": 4.74,
+        "Carb": 74,
+        "Protein": 9.4,
+        "Calories": 1528
+    },
+    {
+        "Name": "Rice (white)",
+        "Fat": 0.66,
+        "Carb": 80,
+        "Protein": 7.1,
+        "Calories": 1528
+    },
+    {
+        "Name": "Rice (brown)",
+        "Fat": 2.92,
+        "Carb": 77,
+        "Protein": 7.9,
+        "Calories": 1549
+    },
+    {
+        "Name": "Wheat",
+        "Fat": 1.54,
+        "Carb": 71,
+        "Protein": 12.6,
+        "Calories": 1369
+    },
+    {
+        "Name": "Potato",
+        "Fat": 0.09,
+        "Carb": 17,
+        "Protein": 2,
+        "Calories": 322
+    },
+    {
+        "Name": "Cassava",
+        "Fat": 0.28,
+        "Carb": 17,
+        "Protein": 1.4,
+        "Calories": 670
+    },
+    {
+        "Name": "Soybean (green)",
+        "Fat": 6.8,
+        "Carb": 11,
+        "Protein": 13,
+        "Calories": 615
+    },
+    {
+        "Name": "Sweet potato",
+        "Fat": 0.05,
+        "Carb": 20,
+        "Protein": 1.6,
+        "Calories": 360
+    },
+    {
+        "Name": "Sorghum",
+        "Fat": 3.3,
+        "Carb": 75,
+        "Protein": 11.3,
+        "Calories": 1419
+    },
+    {
+        "Name": "Yam",
+        "Fat": 0.17,
+        "Carb": 28,
+        "Protein": 1.5,
+        "Calories": 494
+    },
+    {
+        "Name": "Plantain",
+        "Fat": 0.37,
+        "Carb": 32,
+        "Protein": 1.3,
+        "Calories": 511
     }
 ]
