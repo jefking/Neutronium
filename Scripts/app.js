@@ -3,7 +3,6 @@
 var nutritionApp = angular.module('nutritionApp', []);
 var selected = [];
 
-
 nutritionApp.controller('nutrition', ['$scope', '$http', function ($scope, $http) {
     $http.get('Scripts/data.js').success(function (data) {
         $scope.foods = data;
@@ -16,11 +15,13 @@ nutritionApp.controller('picked', ['$scope', function ($scope) {
             selected.push($scope.food);
         }
         else {
-            $.each(selected, function(i) {
-                if (selected[i].Name === $scope.food.Name) {
+            var i = 0;
+            angular.forEach(selected, function (s) {
+                if (s.Name === $scope.food.Name) {
                     selected.splice(i,1);
                     return false;
                 }
+                i++;
             });
         }
     };
@@ -46,14 +47,14 @@ nutritionApp.controller('displaySelected', ['$scope', function ($scope) {
         $scope.CaloriesTotal = 0;
         var totals = 0;
     
-        $.each(selected, function(i) {
-            selected[i].weight = 100;
-            totals += selected[i].Fat + selected[i].Protien + selected[i].Carb;
-            $scope.FatPercentageTotal += selected[i].Fat;
-            $scope.ProtienPercentageTotal += selected[i].Protien;
-            $scope.CarbPercentageTotal += selected[i].Carb;
-            $scope.CaloriesTotal += selected[i].CalPerHundred;
-            $scope.GramsTotal += selected[i].weight;
+        angular.forEach(selected, function (s) {
+            s.weight = 100;
+            totals += s.Fat + s.Protien + s.Carb;
+            $scope.FatPercentageTotal += s.Fat;
+            $scope.ProtienPercentageTotal += s.Protien;
+            $scope.CarbPercentageTotal += s.Carb;
+            $scope.CaloriesTotal += s.CalPerHundred;
+            $scope.GramsTotal += s.weight;
         });
         
         if (totals > 0)
@@ -63,4 +64,13 @@ nutritionApp.controller('displaySelected', ['$scope', function ($scope) {
             $scope.CarbPercentageTotal = $scope.CarbPercentageTotal / totals * 100;
         }
     });
+    
+    
+    $scope.ClearClick = function() {
+        angular.forEach($scope.foods, function (food) {
+            food.selected = false;
+        });
+
+        $scope.selected = selected = [];
+    }
 }]);
