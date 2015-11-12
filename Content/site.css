@@ -83,7 +83,7 @@ body {
 }
 
 .nutritionTable {  
-    height: 740px !important;
+    height: 640px !important;
     overflow: scroll;
     overflow-x: hidden;
 }​
