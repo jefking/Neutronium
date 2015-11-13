@@ -9,9 +9,31 @@ nutritionApp.controller('nutrition', ['$scope', '$http', function ($scope, $http
         angular.forEach($scope.foods, function (food) {
             food.weight = 100;
             food.selected = false;
-            food.proteinPercent = ((food.Protein / (food.Fat + food.Carb + food.Protein)) * food.weight);
-            food.fatPercent = ((food.Fat / (food.Fat + food.Carb + food.Protein)) * food.weight);
-            food.carbPercent = ((food.Carb / (food.Fat + food.Carb + food.Protein)) * food.weight);
+            food.proteinPercent = function() {
+                return ((food.Protein / (food.Fat + food.Carb + food.Protein)) * food.weight);
+            };
+            food.proteinTotal = function()
+            {
+                return food.Calories * (food.weight * .01);
+            }
+            food.fatPercent = function() {
+                return ((food.Fat / (food.Fat + food.Carb + food.Protein)) * food.weight);
+            };
+            food.fatTotal = function()
+            {
+                return food.Fat * (food.weight * .01);
+            }
+            food.carbPercent = function() {
+                return ((food.Carb / (food.Fat + food.Carb + food.Protein)) * food.weight);
+            };
+            food.carbTotal = function()
+            {
+                return food.Carb * (food.weight * .01);
+            }
+            food.caloriesTotal = function()
+            {
+                return food.Calories * (food.weight * .01);
+            }
         });
     });
 }]);
