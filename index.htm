@@ -24,14 +24,14 @@
                     <span class="text-muted"><i class="glyphicon glyphicon-star"></i>&nbsp;{{food.proteinTotal().toFixed(1)}}</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-flash"></i>&nbsp;{{food.carbTotal().toFixed(1)}}</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{food.fatTotal().toFixed(1)}}</span>
-                    <span class="text-muted" ng-model="totalCalories"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{food.caloriesTotal().toFixed(1)}}</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{food.caloriesTotal().toFixed(1)}}</span>
                 </div>
                 <div class="col-xs-6 col-sm-3 placeholder">
                     <h4>Total</h4>
-                    <span class="text-muted"><i class="glyphicon glyphicon-star"></i>&nbsp;{{ProteinPercentageTotal.toFixed(1)}}%</span>
-                    <span class="text-muted"><i class="glyphicon glyphicon-flash"></i>&nbsp;{{CarbPercentageTotal.toFixed(1)}}%</span>
-                    <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{FatPercentageTotal.toFixed(1)}}%</span>
-                    <span class="text-muted"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{foods | filter: {selected: true} | sumByKey:'totalCalories'}}</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-star"></i>&nbsp;{{foods | filter: {selected: true} | sumByFunc:'proteinTotal'}}%</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-flash"></i>&nbsp;{{foods | filter: {selected: true} | sumByFunc:'carbTotal'}}%</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-dashboard"></i>&nbsp;{{foods | filter: {selected: true} | sumByFunc:'fatTotal'}}%</span>
+                    <span class="text-muted"><i class="glyphicon glyphicon-fire"></i>&nbsp;{{foods | filter: {selected: true} | sumByFunc:'caloriesTotal'}}</span>
                     <span class="text-muted"><i class="glyphicon glyphicon-inbox"></i>&nbsp;{{foods | filter: {selected: true} | sumByKey:'weight'}}</span>
                 </div>
             </div>
