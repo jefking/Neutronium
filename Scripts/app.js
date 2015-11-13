@@ -10,21 +10,21 @@ nutritionApp.controller('nutrition', ['$scope', '$http', function ($scope, $http
             food.weight = 100;
             food.selected = false;
             food.proteinPercent = function() {
-                return ((food.Protein / (food.Fat + food.Carb + food.Protein)) * food.weight);
+                return (food.Protein / (food.Fat + food.Carb + food.Protein)) * food.weight;
             };
             food.proteinTotal = function()
             {
-                return food.Calories * (food.weight * .01);
+                return food.Protein * (food.weight * .01);
             }
             food.fatPercent = function() {
-                return ((food.Fat / (food.Fat + food.Carb + food.Protein)) * food.weight);
+                return (food.Fat / (food.Fat + food.Carb + food.Protein)) * food.weight;
             };
             food.fatTotal = function()
             {
                 return food.Fat * (food.weight * .01);
             }
             food.carbPercent = function() {
-                return ((food.Carb / (food.Fat + food.Carb + food.Protein)) * food.weight);
+                return (food.Carb / (food.Fat + food.Carb + food.Protein)) * food.weight;
             };
             food.carbTotal = function()
             {
