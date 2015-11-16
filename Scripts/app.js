@@ -54,9 +54,9 @@ nutritionApp.filter('sumByKey', function() {
         }
 
         var sum = 0;
-        for (var i = data.length - 1; i >= 0; i--) {
-            sum += parseInt(data[i][key]);
-        }
+        angular.forEach(data, function (d) {
+            sum += parseInt(d[key]);
+        });
 
         return sum;
     };
@@ -68,9 +68,9 @@ nutritionApp.filter('sumByFunc', function() {
         }
 
         var sum = 0;
-        for (var i = data.length - 1; i >= 0; i--) {
-            sum += parseInt(data[i][key]());
-        }
+        angular.forEach(data, function (d) {
+            sum += parseInt(d[key]());
+        });
 
         return sum;
     };
