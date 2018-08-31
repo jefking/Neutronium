@@ -1,5 +1,7 @@
-Twitter: JefKingTweets
-Vancouver, British Columbia, Canada
+name: Jef King
+site: http://jefking.me
+twitter: @JefKing_
+location: Vancouver, British Columbia, Canada
 
 Thanks!
 Visual Studio Code, AngularJS, HTML, CSS, Bootstrap
