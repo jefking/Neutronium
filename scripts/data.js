@@ -642,7 +642,14 @@
         "Name": "Rice (white)",
         "Fat": 0.66,
         "Carb": 80,
-        "Protein": 7.1,
+,
+    {
+        "Name": "Plantain",
+        "Fat": 0.37,
+        "Carb": 32,
+        "Protein": 1.3,
+        "Calories": 511
+    }        "Protein": 7.1,
         "Calories": 1528
     },
     {
@@ -707,5 +714,12 @@
         "Carb": 32,
         "Protein": 1.3,
         "Calories": 511
+    },
+    {
+        "Name": "Calimyrna Figs (dried)",
+        "Fat": 0,
+        "Carb": 65,
+        "Protein": 2.5,
+        "Calories": 275
     }
 ]
