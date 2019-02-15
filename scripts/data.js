@@ -9,6 +9,14 @@
     },
     {
 
+        "Name": "Hemp Rotini",
+        "Fat": 2,
+        "Carb": 61,
+        "Protein":20 ,
+        "Calories": 304
+    },
+    {
+
         "Name": "Extra Virgin Olive Oil",
         "Fat": 100,
         "Carb": 0,
