@@ -1,6 +1,5 @@
 ﻿[
     {
-
         "Name": "Olive Oil",
         "Fat": 93.33333333333334,
         "Carb": 0,
@@ -15,7 +14,6 @@
         "Calories": 304
     },
     {
-
         "Name": "Extra Virgin Olive Oil",
         "Fat": 100,
         "Carb": 0,
@@ -23,7 +21,6 @@
         "Calories": 884
     },
     {
-
         "Name": "Macadamia",
         "Fat": 75.8,
         "Carb": 13.8,
@@ -31,7 +28,6 @@
         "Calories": 740
     },
     {
-
         "Name": "Clarified Butter",
         "Fat": 82.1,
         "Carb": 0,
@@ -39,7 +35,6 @@
         "Calories": 726
     },
     {
-
         "Name": "Pili Nut",
         "Fat": 79,
         "Carb": 4.2,
@@ -47,7 +42,6 @@
         "Calories": 719.2
     },
     {
-
         "Name": "Savi Seed Carmalized",
         "Fat": 32,
         "Carb": 42.9,
@@ -55,7 +49,6 @@
         "Calories": 714
     },
     {
-
         "Name": "Pecan nuts",
         "Fat": 72,
         "Carb": 14,
@@ -70,7 +63,6 @@
         "Calories": 673
     },
     {
-
         "Name": "Brazil nuts",
         "Fat": 66,
         "Carb": 12,
@@ -78,7 +70,6 @@
         "Calories": 656
     },
     {
-
         "Name": "Walnut",
         "Fat": 65,
         "Carb": 14,
@@ -86,7 +77,6 @@
         "Calories": 654
     },
     {
-
         "Name": "Hazel Nuts",
         "Fat": 61,
         "Carb": 17,
@@ -94,7 +84,6 @@
         "Calories": 628
     },
     {
-
         "Name": "WowButter (Soy)",
         "Fat": 46.9,
         "Carb": 25,
@@ -102,7 +91,6 @@
         "Calories": 625
     },
     {
-
         "Name": "Kraft Crunchy Peanut Butter",
         "Fat": 50,
         "Carb": 20,
@@ -110,7 +98,6 @@
         "Calories": 600
     },
     {
-
         "Name": "Toasted Coconut",
         "Fat": 47,
         "Carb": 44,
@@ -118,7 +105,6 @@
         "Calories": 592
     },
     {
-
         "Name": "Sunflower Seeds",
         "Fat": 51,
         "Carb": 20,
@@ -126,7 +112,6 @@
         "Calories": 584
     },
     {
-
         "Name": "Hemp Seeds/Hearts",
         "Fat": 46.7,
         "Carb": 6.7,
@@ -134,7 +119,6 @@
         "Calories": 580
     },
     {
-
         "Name": "Almond",
         "Fat": 49,
         "Carb": 22,
@@ -142,7 +126,6 @@
         "Calories": 576
     },
     {
-
         "Name": "Sesame seeds",
         "Fat": 50,
         "Carb": 23,
@@ -150,7 +133,6 @@
         "Calories": 573
     },
     {
-
         "Name": "Peanuts",
         "Fat": 49,
         "Carb": 16,
@@ -158,7 +140,6 @@
         "Calories": 567
     },
     {
-
         "Name": "Pistachio",
         "Fat": 45,
         "Carb": 29,
@@ -166,7 +147,6 @@
         "Calories": 567
     },
     {
-
         "Name": "Cashew",
         "Fat": 44,
         "Carb": 30,
@@ -174,7 +154,6 @@
         "Calories": 553
     },
     {
-
         "Name": "Yogurt covered almonds",
         "Fat": 35,
         "Carb": 55,
@@ -182,7 +161,6 @@
         "Calories": 550
     },
     {
-
         "Name": "Dark Chocolate",
         "Fat": 31,
         "Carb": 61,
@@ -190,7 +168,6 @@
         "Calories": 546
     },
     {
-
         "Name": "White chocolate",
         "Fat": 32.4,
         "Carb": 59.4,
@@ -198,7 +175,6 @@
         "Calories": 538
     },
     {
-
         "Name": "Flax seeds",
         "Fat": 42,
         "Carb": 29,
@@ -206,7 +182,6 @@
         "Calories": 534
     },
     {
-
         "Name": "Nature Valley Granola Thins",
         "Fat": 23.6,
         "Carb": 23.5,
@@ -214,7 +189,6 @@
         "Calories": 529
     },
     {
-
         "Name": "Nutella",
         "Fat": 32.4,
         "Carb": 56.8,
@@ -222,7 +196,6 @@
         "Calories": 526
     },
     {
-
         "Name": "Poppy seeds",
         "Fat": 42,
         "Carb": 28,
@@ -230,7 +203,6 @@
         "Calories": 525
     },
     {
-
         "Name": "Milk Chocolate covered Peanuts",
         "Fat": 42.5,
         "Carb": 37.5,
@@ -238,7 +210,6 @@
         "Calories": 525
     },
     {
-
         "Name": "Banana Chips",
         "Fat": 34,
         "Carb": 58,
@@ -246,7 +217,6 @@
         "Calories": 519
     },
     {
-
         "Name": "HobNob Chocolate Cookies",
         "Fat": 21.4,
         "Carb": 62,
@@ -254,7 +224,6 @@
         "Calories": 500
     },
     {
-
         "Name": "Short Bread",
         "Fat": 24,
         "Carb": 64,
@@ -262,7 +231,6 @@
         "Calories": 500
     },
     {
-
         "Name": "Soy Nuts",
         "Fat": 26,
         "Carb": 32,
@@ -270,7 +238,6 @@
         "Calories": 500
     },
     {
-
         "Name": "Dried Milk",
         "Fat": 27,
         "Carb": 38,
@@ -278,7 +245,6 @@
         "Calories": 496
     },
     {
-
         "Name": "Chia seeds",
         "Fat": 31,
         "Carb": 42,
@@ -286,7 +252,6 @@
         "Calories": 486
     },
     {
-
         "Name": "M&M's",
         "Fat": 21.4,
         "Carb": 71.4,
@@ -294,7 +259,6 @@
         "Calories": 485.7
     },
     {
-
         "Name": "Simple Pleasures Oat Choco",
         "Fat": 23.3,
         "Carb": 66.7,
@@ -656,8 +620,6 @@
         "Carb": 32,
         "Protein": 1.3,
         "Calories": 511
-    }        "Protein": 7.1,
-        "Calories": 1528
     },
     {
         "Name": "Rice (brown)",
