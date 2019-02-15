@@ -613,7 +613,9 @@
         "Name": "Rice (white)",
         "Fat": 0.66,
         "Carb": 80,
-,
+        "Protein": 7.1,
+        "Calories": 1528
+    },
     {
         "Name": "Plantain",
         "Fat": 0.37,
