@@ -1,4 +1,6 @@
 # Neutronium
+[![Build status](https://threadmaster.visualstudio.com/Static/_apis/build/status/Neutronium)](https://threadmaster.visualstudio.com/Static/_build/latest?definitionId=10)
+
 ## To Do
 
 - Search for product images, from BING
