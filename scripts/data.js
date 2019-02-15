@@ -10,10 +10,10 @@
     {
 
         "Name": "Hemp Rotini",
-        "Fat": 2,
-        "Carb": 61,
-        "Protein":20 ,
-        "Calories": 304
+        "Fat": 1.785714286,
+        "Carb": 60.71428571,
+        "Protein":19.64285714,
+        "Calories": 303.5714286
     },
     {
 
