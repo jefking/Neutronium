@@ -175,13 +175,6 @@
         "Calories": 538
     },
     {
-        "Name": "Flax seeds",
-        "Fat": 42,
-        "Carb": 29,
-        "Protein": 18,
-        "Calories": 534
-    },
-    {
         "Name": "Nature Valley Granola Thins",
         "Fat": 23.6,
         "Carb": 23.5,
@@ -243,13 +236,6 @@
         "Carb": 38,
         "Protein": 26,
         "Calories": 496
-    },
-    {
-        "Name": "Chia seeds",
-        "Fat": 31,
-        "Carb": 42,
-        "Protein": 17,
-        "Calories": 486
     },
     {
         "Name": "M&M's",
@@ -692,5 +678,69 @@
         "Carb": 65,
         "Protein": 2.5,
         "Calories": 275
+    },
+    {
+        "Name": "Flax seeds",
+        "Fat": 12,
+        "Carb": 8,
+        "Protein": 5,
+        "Calories": 150,
+        "Weight": 28
+    },
+    {
+        "Name": "Organic Golden Flax seeds",
+        "Fat": 12,
+        "Carb": 8,
+        "Protein": 5,
+        "Calories": 150,
+        "Weight": 28
+    },
+    {
+        "Name": "Organic Flax seeds",
+        "Fat": 10,
+        "Carb": 10,
+        "Protein": 6,
+        "Calories": 138,
+        "Weight": 28
+    },
+    {
+        "Name": "Chia seeds",
+        "Fat": 9,
+        "Carb": 12,
+        "Protein": 4,
+        "Calories": 137,
+        "Weight": 28
+    },
+    {
+        "Name": "Organic Chia seeds",
+        "Fat": 9,
+        "Carb": 12,
+        "Protein": 4,
+        "Calories": 137,
+        "Weight": 28
+    },
+    {
+        "Name": "Organic White Chia seeds",
+        "Fat": 9,
+        "Carb": 12,
+        "Protein": 4,
+        "Calories": 137,
+        "Weight": 28
+    },
+    {
+        "Name": "Organic Sprouted Black Chia seeds",
+        "Fat": 9,
+        "Carb": 11,
+        "Protein": 6,
+        "Calories": 149,
+        "Weight": 28
+    },
+    {
+        "Name": "White Chia seeds",
+        "Fat": 9,
+        "Carb": 12,
+        "Protein": 4,
+        "Calories": 137,
+        "Weight": 28
     }
 ]
