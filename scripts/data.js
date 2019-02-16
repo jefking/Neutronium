@@ -681,66 +681,58 @@
     },
     {
         "Name": "Flax seeds",
-        "Fat": 12,
-        "Carb": 8,
-        "Protein": 5,
-        "Calories": 150,
-        "Weight": 28
+        "Fat": 42.9,
+        "Carb": 28.6,
+        "Protein": 17.9,
+        "Calories": 535.7
     },
     {
         "Name": "Organic Golden Flax seeds",
-        "Fat": 12,
-        "Carb": 8,
-        "Protein": 5,
-        "Calories": 150,
-        "Weight": 28
+        "Fat": 42.9,
+        "Carb": 28.6,
+        "Protein": 17.9,
+        "Calories": 535.7
     },
     {
         "Name": "Organic Flax seeds",
-        "Fat": 10,
-        "Carb": 10,
-        "Protein": 6,
-        "Calories": 138,
-        "Weight": 28
+        "Fat": 35.7,
+        "Carb": 35.7,
+        "Protein": 21.4,
+        "Calories": 492.9
     },
     {
         "Name": "Chia seeds",
-        "Fat": 9,
-        "Carb": 12,
-        "Protein": 4,
-        "Calories": 137,
-        "Weight": 28
+        "Carb": 42.9,
+        "Fat": 32.1,
+        "Protein": 14.3,
+        "Calories": 489.3
     },
     {
         "Name": "Organic Chia seeds",
-        "Fat": 9,
-        "Carb": 12,
-        "Protein": 4,
-        "Calories": 137,
-        "Weight": 28
+        "Carb": 42.9,
+        "Fat": 32.1,
+        "Protein": 14.3,
+        "Calories": 489.3
     },
     {
         "Name": "Organic White Chia seeds",
-        "Fat": 9,
-        "Carb": 12,
-        "Protein": 4,
-        "Calories": 137,
-        "Weight": 28
+        "Carb": 42.9,
+        "Fat": 32.1,
+        "Protein": 14.3,
+        "Calories": 489.3
     },
     {
         "Name": "Organic Sprouted Black Chia seeds",
-        "Fat": 9,
-        "Carb": 11,
-        "Protein": 6,
-        "Calories": 149,
-        "Weight": 28
+        "Carb": 39.3,
+        "Fat": 32.1,
+        "Protein": 21.4,
+        "Calories": 532.1
     },
     {
         "Name": "White Chia seeds",
-        "Fat": 9,
-        "Carb": 12,
-        "Protein": 4,
-        "Calories": 137,
-        "Weight": 28
+        "Carb": 42.9,
+        "Fat": 32.1,
+        "Protein": 14.3,
+        "Calories": 489.3
     }
 ]
